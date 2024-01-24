@@ -10,7 +10,7 @@ const Bootcamp = () => {
     <div className="my-14 ">
       <Container>
         <div className="lg:flex space-x-20 ">
-          <div className=" w-7/12">
+          <div className=" lg:w-7/12 w-full">
             <h1 className="text-lg font-semibold text-black">{bootcamp.smallHeader}</h1>
             <h1 className="text-6xl font-bold uppercase my-3 tracking-wider">{bootcamp.heading}</h1>
             <p className="text-base">{bootcamp.text}</p>
@@ -24,7 +24,7 @@ const Bootcamp = () => {
             </div>
             <p className="text-base">{bootcamp.text2}</p>
 
-            <div className="inline-flex justify-between w-3/4 my-5">
+            <div className="inline-flex justify-between lg:w-3/4 w-full my-5">
               <Button text="apply" className="bg-black text-white uppercase" />
 
               <div className="flex justify-center items-center border-2 border-black rounded-lg px-4 py-2">
@@ -33,7 +33,7 @@ const Bootcamp = () => {
             </div>
           </div>
 
-          <div className="w-5/12 flex flex-col  relative">
+          <div className="lg:w-5/12 w-full flex flex-col  relative mx-auto">
             <div className="h-32 w-32 rounded-2xl bg-[#FF5800] ">
               <h1 className="font-bold pt-5 pb-2 text-center text-white text-2xl">28</h1>
               <p className="text-center font-semibold text-white">

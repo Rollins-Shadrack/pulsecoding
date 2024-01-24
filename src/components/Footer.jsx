@@ -37,7 +37,8 @@ const Footer = () => {
         </div>
         <div className="border border-gray-300"></div>
 
-        <div className=" flex items-center justify-between  my-4 w-4/5">
+        <div className=" lg:flex items-center justify-between  my-4 lg:w-4/5">
+
           <div className=" space-x-3 ">
             {footer.additionalLinks.map((addLinks, idx) => (
               <Link key={idx} href={addLinks.href} className={`text-base ${idx === 1 ? "md:border-l md:border-r border-gray-300 px-5" : ""}`}>
@@ -46,7 +47,7 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="mx-auto whitespace-nowrap font-medium">
+          <div className="mx-auto whitespace-nowrap font-medium text-center">
             &copy;
             {footer.copyright}
           </div>
