@@ -6,7 +6,7 @@ const Stats = () => {
   return (
     <div className="py-24 text-white bg-black">
       <Container>
-        <div className="grid grid-cols-3 lg:grid-cols-4 gap-10 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-24 gap-10 text-center">
           {stats.map((stat, idx) => (
             <div key={idx}>
               <h1 className="lg:text-5xl text-3xl font-bold">{stat.number}</h1>

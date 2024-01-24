@@ -82,4 +82,5 @@ export const instructors = [
     title: "Head of UX",
     name: "Janka Indrajith",
   },
+  
 ];

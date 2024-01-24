@@ -13,22 +13,22 @@ const Bootcamps = () => {
           <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Career-changing bootcamps in Web and Data </h1>
           <p className="my-3  lg:text-xl leading-relaxed">400-hour programs that have helped thousands of students launch new careers in tech</p>
           <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 my-4">
-            <div className="inline-flex lg:text-xl mx-auto ">
+            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
               <Check strokeWidth={3} className="text-red-700 mr-2" />
               <span className="font-bold">400 hours</span>
             </div>
 
-            <div className="inline-flex lg:text-xl mx-auto ">
+            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
               <Check strokeWidth={3} className="text-red-700 mr-2" />
               <span className="font-bold">Live Classes</span>
             </div>
 
-            <div className="inline-flex lg:text-xl mx-auto ">
+            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
               <Check strokeWidth={3} className="text-red-700 mr-2" />
-              <span className="font-bold">Flexible- 2 to 6 months</span>
+              <span className="font-bold">Flexible 2 to 6 months</span>
             </div>
 
-            <div className="inline-flex lg:text-xl mx-auto ">
+            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
               <Check strokeWidth={3} className="text-red-700 mr-2" />
               <span className="font-bold">On site or online</span>
             </div>

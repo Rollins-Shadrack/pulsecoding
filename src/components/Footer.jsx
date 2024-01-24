@@ -37,10 +37,11 @@ const Footer = () => {
         </div>
         <div className="border  w-4/5"></div>
 
-        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
-          <div className=" lg:col-span-2 grid grid-cols-1 lg:grid-cols-3 gap-4 ">
+        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
+
+          <div className=" md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-2 ">
             {footer.additionalLinks.map((addLinks, idx) => (
-              <Link key={idx} href={addLinks.href} className={`whitespace-nowrap  ${idx === 1 ? "md:border-l-4 md:border-r-4 md:px-3" : ""}`}>
+              <Link key={idx} href={addLinks.href} className={`text-base ${idx === 1 ? "md:border-l-4 md:border-r-4 lg:px-3" : ""}`}>
                 {addLinks.label}
               </Link>
             ))}

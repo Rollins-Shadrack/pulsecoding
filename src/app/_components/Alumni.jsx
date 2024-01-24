@@ -6,7 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 
 const Alumni = () => {
   return (
-    <div className="py-10">
+    <div className="py-14">
       <Container>
         <Carousel
           opts={{
@@ -16,7 +16,7 @@ const Alumni = () => {
           className="mx-auto w-full max-w-full space-y-8">
           <div className="lg:flex">
             
-            <div className="w-full lg:w-5/12 grid grid-cols-1">
+            <div className="w-full lg:w-5/12 grid grid-cols-1 mb-3">
               <div className="w-full">
                 <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Alumni </h1>
                 <p className="my-3  text-base">

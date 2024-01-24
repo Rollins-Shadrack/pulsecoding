@@ -26,19 +26,33 @@ const Instructors = () => {
       autoplayInterval: 10000,
       renderCenterLeftControls: ({ previousSlide }) => null,
       renderCenterRightControls: ({ nextSlide }) => null,
-      cellspacing: 10,
+      cellSpacing: 10,
     };
   return (
     <div className="my-5">
       <Container>
         <h1 className="font-semibold tracking-wider text-xl">Instructors</h1>
-        <Carousel className="w-full " {...params}>
+        <Carousel
+          className="w-full "
+          {...params}
+          renderBottomCenterControls={({ currentSlide, slideCount, goToSlide }) => (
+            <ul className="flex space-x-2 mt-4">
+              {[...Array(slideCount)].map((_, index) => (
+                <li key={index}>
+                  <button
+                    className={`h-2 w-3 rounded-2xl ${index === currentSlide ? "bg-brandPrimary" : "bg-gray-400"}`}
+                    onClick={() => goToSlide(index)}
+                  />
+                </li>
+              ))}
+            </ul>
+          )}>
           {instructors.map((instructor, idx) => (
-            <Card key={idx} className="mx-1 pb-5 rounded-t-2xl my-10">
-              <Image src={instructor.img} height={500} width={500} alt="pulsecoding.com" className="w-full h-56 rounded-t-2xl object-cover" />
-              <div className="px-3">
+            <Card key={idx} className="lg:mx-5 pb-5 rounded-t-2xl my-10">
+              <Image src={instructor.img} height={500} width={500} alt="pulsecoding.com" className="w-full h-32 md:h-48 lg:h-56 rounded-t-2xl object-cover" />
+              <div className="px-3 text-base">
                 <p className="my-3">{instructor.title}</p>
-                <p className="font-bold tracking-wider">{instructor.name}</p>
+                <p className="font-bold tracking-wider whitespace-nowrap truncate">{instructor.name}</p>
               </div>
             </Card>
           ))}

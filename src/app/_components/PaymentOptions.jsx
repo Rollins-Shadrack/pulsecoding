@@ -7,12 +7,12 @@ const PaymentOptions = () => {
     <div className="h-[500px] lg:h-[400px] relative">
       <div className="h-1/2 bg-brandBrownish relative"></div>
       <div className="h-1/2 bg-white relative"></div>
-      <Container className="absolute w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-10 py-5 shadow-lg rounded-2xl z-[50]">
+      <Container className="absolute w-full md:w-4/5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-10 py-5 shadow-lg rounded-2xl z-[50]">
         <div className="text-center">
           <h1 className="font-bold text-2xl lg:text-4xl  leading-tight ">Flexible payment options</h1>
 
           <div className="flex justify-center items-center">
-            <div className="grid grid-cols-1 lg:grid-cols-3  gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-3  gap-3">
               <div className="inline-flex items-center">
                 <div className="h-3 w-3 rounded-full bg-brandBrownish mr-2"></div>
                 <span className="font-semibold text-base">Learn now, pay later</span>
@@ -31,8 +31,8 @@ const PaymentOptions = () => {
           </div>
         </div>
 
-        <div className="my-6 mx-auto w-4/5">
-          <div className="flex flex-col items-center">
+        <div className="my-6 mx-auto md:w-4/5">
+          <div className="lg:flex flex-col items-center">
             <h1 className="leading-relaxed font-semibold lg:text-xl text-lg">Talk to our advisors </h1>
             <div className="flex justify-center -space-x-3">
               <img
