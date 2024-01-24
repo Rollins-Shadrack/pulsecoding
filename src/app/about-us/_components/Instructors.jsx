@@ -5,7 +5,6 @@ import Carousel from 'nuka-carousel'
 import { Card } from '@/components/ui/card'
 import { instructors } from '@/constants/data/aboutpage'
 import Image from 'next/image'
-
 const Instructors = () => {
     const [screenSize, setScreenSize] = useState(0);
 
@@ -26,8 +25,8 @@ const Instructors = () => {
       autoplay: true,
       autoplayInterval: 10000,
       renderCenterLeftControls: ({ previousSlide }) => null,
-        renderCenterRightControls: ({ nextSlide }) => null,
-      cellspacing:10
+      renderCenterRightControls: ({ nextSlide }) => null,
+      cellspacing: 10,
     };
   return (
     <div className="my-5">

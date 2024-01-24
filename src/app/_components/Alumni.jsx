@@ -1,34 +1,49 @@
+'use client'
 import Container from '@/components/Container'
 import { alumnus } from '@/constants/data/homepage';
 import Image from 'next/image';
-import React from 'react'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Alumni = () => {
   return (
     <div className="py-10">
       <Container>
-        <div className="lg:flex space-x-5 py-5">
-          <div className="w-full lg:w-1/4">
-            <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Alumni </h1>
-            <p className="my-3  text-base">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio beatae consequuntur omnis fugiat.
-            </p>
-          </div>
-
-          <div className="w-full lg:w-3/4 grid grid-cols-3 gap-3 ">
-            {alumnus.map((alumni, idx) => (
-              <div key={idx} className=" rounded-2xl shadow-lg hover:scale-105 ">
-                <Image src={alumni.img} width={600} height={400} className="rounded-t-2xl w-full h-56 object-fill " alt="pulsecoding.com" />
-                <div className="text-center pb-5">
-                  <h1 className="text-lg lg:text-xl font-bold my-2">{alumni.name}</h1>
-                  <p className="px-2 mx-auto">{alumni.title}</p>
-
-                  <p className="  w-fit mx-auto font-semibold border-b-2 border-b-brandPrimary   whitespace-nowrap">Read Story</p>
-                </div>
+        <Carousel
+          opts={{
+            align: "start",
+            // loop: true,
+          }}
+          className="mx-auto w-full max-w-full space-y-8">
+          <div className="lg:flex">
+            
+            <div className="w-full lg:w-5/12 grid grid-cols-1">
+              <div className="w-full">
+                <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Alumni </h1>
+                <p className="my-3  text-base">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio .
+                </p>
               </div>
-            ))}
+
+              <div className="space-x-3">
+                <CarouselPrevious className="relative inset-0 h-10 w-10 translate-x-0 translate-y-0 border-brandPrimary bg-brandLight" />
+                <CarouselNext className="relative inset-0 h-10 w-10 translate-x-0 translate-y-0 border-brandPrimary bg-brandLight" />
+              </div>
+            </div>
+
+            <CarouselContent className="w-full">
+              {alumnus.map((alumni, idx) => (
+                <CarouselItem key={idx} className="rounded-2xl shadow-lg cursor-pointer pl-3 md:basis-1/2 md:pl-4 lg:basis-1/3">
+                  <Image src={alumni.img} width={400} height={800} className="rounded-t-2xl w-full  h-64 object-cover" alt="pulsecoding.com" />
+                  <div className="text-center pb-5 bg-gray-400 text-white">
+                    <h1 className="text-lg lg:text-xl font-bold py-2 ">{alumni.name}</h1>
+                    <p className="px-2 mx-auto">{alumni.title}</p>
+                    <p className="w-fit mx-auto font-semibold border-b-2 border-b-white whitespace-nowrap">Read Story</p>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
           </div>
-        </div>
+        </Carousel>
       </Container>
     </div>
   );

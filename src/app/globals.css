@@ -77,9 +77,6 @@
 }
 
 @layer base {
-  body {
-    @apply bg-background text-foreground;
-  }
   * {
   scrollbar-width: thin;
   scrollbar-color: var(--secondary) var(--primary);
@@ -102,6 +99,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--tertiary);
+}
+
+@media screen and (min-width: 1600px) {
+  .main-container, nav {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 }
 
 }

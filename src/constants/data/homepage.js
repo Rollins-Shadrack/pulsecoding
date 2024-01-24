@@ -24,12 +24,6 @@ export const bootcamp = {
       desc: "Learn to build web applications from scratch and land a job in software development",
       button: "Learn web development",
     },
-    {
-      img: "/bootcamp.jpeg",
-      title: "Web development",
-      desc: "Learn to build web applications from scratch and land a job in software development",
-      button: "Learn web development",
-    },
   ],
 };
 
@@ -54,6 +48,21 @@ export const guide = {
 };
 
 export const alumnus = [
+  {
+    img: "/alumni1.jpeg",
+    name: "Kyler Kisha",
+    title: "Software Engineering",
+  },
+  {
+    img: "/alumni2.jpg",
+    name: "Kyler Kisha",
+    title: "Software Engineering",
+  },
+  {
+    img: "/alumni3.jpeg",
+    name: "Kyler Kisha",
+    title: "Software Engineering",
+  },
   {
     img: "/alumni1.jpeg",
     name: "Kyler Kisha",

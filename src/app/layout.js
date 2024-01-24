@@ -17,13 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen font-sans antialiased", fontSans.variable)}>
+      <body className={cn("min-h-screen font-sans antialiased main-container", fontSans.variable)}>
         <div className="wrapper flex flex-col h-screen">
           {/* Navbar */}
-          <Navbar/>
-          <main className="flex-1 flex flex-col justify-center">{children}</main>
+          <Navbar />
+          <main className="flex-1 flex flex-col flex-grow justify-center">{children}</main>
           {/* Footer */}
-          <Footer/>
+          <Footer />
         </div>
       </body>
     </html>

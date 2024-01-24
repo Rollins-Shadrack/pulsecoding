@@ -9,11 +9,13 @@ export const metadata = {
   description: "",
 };
 export default function About() {
-    return (<>
-        <Hero />
-        <FAQ />
+  return (
+    <div>
+      <Hero />
+      <FAQ />
       <Stats />
       <Instructors />
-      <Newsletter/>
-    </>);
+      <Newsletter />
+    </div>
+  );
 }
