@@ -15,18 +15,15 @@ const Alumni = () => {
           }}
           className="mx-auto w-full max-w-full space-y-8">
           <div className="lg:flex">
-            
             <div className="w-full lg:w-5/12 grid grid-cols-1 mb-3">
               <div className="w-full">
                 <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Alumni </h1>
-                <p className="my-3  text-base">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio .
-                </p>
+                <p className="my-3  text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio .</p>
               </div>
 
               <div className="space-x-3">
-                <CarouselPrevious className="relative inset-0 h-10 w-10 translate-x-0 translate-y-0 border-brandPrimary bg-brandLight" />
-                <CarouselNext className="relative inset-0 h-10 w-10 translate-x-0 translate-y-0 border-brandPrimary bg-brandLight" />
+                <CarouselPrevious className="relative inset-0 h-8 w-8 translate-x-0 translate-y-0 border-gray-400 bg-white" />
+                <CarouselNext className="relative inset-0 h-8 w-8 translate-x-0 translate-y-0 border-gray-400 bg-white" />
               </div>
             </div>
 

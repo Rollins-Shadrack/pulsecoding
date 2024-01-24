@@ -23,7 +23,7 @@ const Instructors = () => {
       wrapAqound: true,
       slidesToShow: screenSize >= 1008 ? 4 : screenSize < 768 ? 2 : 3,
       autoplay: true,
-      autoplayInterval: 10000,
+      autoplayInterval: 5000,
       renderCenterLeftControls: ({ previousSlide }) => null,
       renderCenterRightControls: ({ nextSlide }) => null,
       cellSpacing: 10,
@@ -40,7 +40,7 @@ const Instructors = () => {
               {[...Array(slideCount)].map((_, index) => (
                 <li key={index}>
                   <button
-                    className={`h-2 w-3 rounded-2xl ${index === currentSlide ? "bg-brandPrimary" : "bg-gray-400"}`}
+                    className={`h-1 w-8 rounded-2xl ${index === currentSlide ? "bg-brandPrimary" : "bg-gray-400"}`}
                     onClick={() => goToSlide(index)}
                   />
                 </li>
@@ -48,7 +48,7 @@ const Instructors = () => {
             </ul>
           )}>
           {instructors.map((instructor, idx) => (
-            <Card key={idx} className="lg:mx-5 pb-5 rounded-t-2xl my-10">
+            <Card key={idx} className="lg:mx-2 pb-5 rounded-t-2xl my-10">
               <Image src={instructor.img} height={500} width={500} alt="pulsecoding.com" className="w-full h-32 md:h-48 lg:h-56 rounded-t-2xl object-cover" />
               <div className="px-3 text-base">
                 <p className="my-3">{instructor.title}</p>

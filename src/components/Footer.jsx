@@ -35,19 +35,18 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="border  w-4/5"></div>
+        <div className="border border-gray-300"></div>
 
-        <div className=" grid grid-cols-1 md:grid-cols-4 gap-4 my-4">
-
-          <div className=" md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-2 ">
+        <div className=" flex items-center justify-between  my-4 w-4/5">
+          <div className=" space-x-3 ">
             {footer.additionalLinks.map((addLinks, idx) => (
-              <Link key={idx} href={addLinks.href} className={`text-base ${idx === 1 ? "md:border-l-4 md:border-r-4 lg:px-3" : ""}`}>
+              <Link key={idx} href={addLinks.href} className={`text-base ${idx === 1 ? "md:border-l md:border-r border-gray-300 px-5" : ""}`}>
                 {addLinks.label}
               </Link>
             ))}
           </div>
 
-          <div className="whitespace-nowrap">
+          <div className="mx-auto whitespace-nowrap font-medium">
             &copy;
             {footer.copyright}
           </div>
