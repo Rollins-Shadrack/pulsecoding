@@ -1,6 +1,6 @@
+import Team from "@/components/Team";
 import FAQ from "./_components/FAQ";
 import Hero from "./_components/Hero";
-import Instructors from "./_components/Instructors";
 import Newsletter from "./_components/Newsletter";
 import Stats from "./_components/Stats";
 
@@ -14,7 +14,7 @@ export default function About() {
       <Hero />
       <FAQ />
       <Stats />
-      <Instructors />
+      <Team heading={"Instructors"} headingClass={"font-semibold tracking-wider text-xl"} />
       <Newsletter />
     </div>
   );

@@ -1,5 +1,8 @@
 import Bootcamp from "./_components/Bootcamp";
+import Brands from "./_components/Brands";
+import CallToAction from "./_components/CallToAction";
 import Hero from "./_components/Hero"
+import CourseInfo from './_components/coursesInfo'
 
 export const metadata = {
   title: "Courses",
@@ -8,6 +11,9 @@ export const metadata = {
 export default function About() {
   return (<>
     <Hero />
-    <Bootcamp/>
+    <Bootcamp />
+    <CourseInfo />
+    <Brands />
+    <CallToAction/>
     </>);
 }

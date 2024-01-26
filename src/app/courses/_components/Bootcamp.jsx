@@ -9,43 +9,44 @@ const Bootcamp = () => {
   return (
     <div className="my-14 ">
       <Container>
-        <div className="lg:flex space-x-20 ">
-          <div className=" lg:w-7/12 w-full">
+        <div className="lg:flex lg:space-x-20 ">
+          <div className=" lg:w-7/12 w-full mx-auto">
             <h1 className="text-lg font-semibold text-black">{bootcamp.smallHeader}</h1>
-            <h1 className="text-6xl font-bold uppercase my-3 tracking-wider">{bootcamp.heading}</h1>
+            <h1 className="lg:text-6xl text-4xl  font-bold uppercase my-3 tracking-wider">{bootcamp.heading}</h1>
             <p className="text-base">{bootcamp.text}</p>
-            <div className="my-5 grid grid-cols-4 gap-5">
+            <div className="my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
               {bootcamp.addons.map((addon, idx) => (
                 <div key={idx} className="inline-flex  text-sm ">
                   <Check strokeWidth={3} className="text-green-700 mr-2" />
-                  <span className="font-semibold">{addon}</span>
+                  <span className="font-semibold whitespace-nowrap">{addon}</span>
                 </div>
               ))}
             </div>
             <p className="text-base">{bootcamp.text2}</p>
 
-            <div className="inline-flex justify-between lg:w-3/4 w-full my-5">
+            <div className="inline-flex justify-between lg:w-3/4 w-full my-5 space-x-3">
               <Button text="apply" className="bg-black text-white uppercase" />
 
-              <div className="flex justify-center items-center border-2 border-black rounded-lg px-4 py-2">
+              <div className="flex justify-center items-center border-2 border-black rounded-lg px-4 py-2 whitespace-nowrap ">
                 Request a Prospectus <ArrowRight className="w-6 h-6 ml-2 text-bold" />
               </div>
             </div>
           </div>
+          <div className="lg:w-5/12 w-full ">
+            <div className=" flex flex-col  relative mx-auto ">
+              <div className="h-32 w-32 rounded-2xl bg-[#FF5800] ">
+                <h1 className="font-bold pt-5 pb-2 text-center text-white text-2xl">28</h1>
+                <p className="text-center font-semibold text-white">
+                  weeks <br /> part time
+                </p>
+              </div>
+              <div className="w-64 h-48 p-2 rounded border translate-x-4  -rotate-6  bg-gray-200">
+                <Image src="/bootcamp1.jpeg" width={600} height={500} className="object-fill h-48 w-96" />
+              </div>
 
-          <div className="lg:w-5/12 w-full flex flex-col  relative mx-auto">
-            <div className="h-32 w-32 rounded-2xl bg-[#FF5800] ">
-              <h1 className="font-bold pt-5 pb-2 text-center text-white text-2xl">28</h1>
-              <p className="text-center font-semibold text-white">
-                weeks <br /> part time
-              </p>
-            </div>
-            <div className="w-64 h-48 p-2 rounded border translate-x-4  -rotate-6  bg-gray-200">
-              <Image src="/bootcamp1.jpeg" width={600} height={500} className="object-fill h-48 w-96" />
-            </div>
-
-            <div className="h-64 w-64 p-2 border rounded absolute left-[28%] top-[10%] bg-gray-300 rotate-3">
-              <Image src="/bootcamp2.jpeg" width={600} height={500} className="object-cover " />
+              <div className="h-64 w-64 p-2 border rounded absolute left-[28%] top-[30%] md:left-[20%] md:top-[15%] lg:left-[28%] lg:top-[10%] bg-gray-300 rotate-3">
+                <Image src="/bootcamp2.jpeg" width={600} height={500} className="object-cover " />
+              </div>
             </div>
           </div>
         </div>

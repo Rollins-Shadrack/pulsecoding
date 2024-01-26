@@ -9,13 +9,13 @@ const Hero = () => {
           <h1 className="text-white lg:text-5xl text-3xl font-bold">About Us</h1>
         </div>
       </div>
-      <Container className="my-10">
-        <p className="text-base leading-relaxed tracking-wide">
+      <div className="px-5 my-8">
+        <p className="text-base leading-relaxed tracking-wide text-justify">
           In the fast-paced and ever-evolving world of technology, finding skilled and knowledgeable professionals is crucial for the success of any
           business. Pulse Coding emerges as a game-changer in the recruitment landscape, providing employers with a unique opportunity to tap into a
           pool of highly qualified candidates without the burden of hefty recruitment fees.
         </p>
-        <p className="text-base my-1 leading-relaxed tracking-wide">
+        <p className="text-base my-1.5 leading-relaxed tracking-wide text-justify">
           Pulse Coding is an innovative platform that specializes in training and developing coding talents, equipping them with the technical
           knowledge and skills needed to thrive in today's competitive tech industry. Graduates from Pulse Coding bring a fresh perspective and a
           wealth of expertise, making them valuable assets for companies seeking to enhance their technical workforce. One of the key advantages of
@@ -23,15 +23,14 @@ const Hero = () => {
           languages, frameworks, and tools, ensuring that graduates possess a well-rounded skill set. Whether it's front-end development, back-end
           programming, or full-stack expertise, Pulse Coding graduates are well-prepared to contribute effectively to a variety of projects.
         </p>
-        <p className="text-base my-1 leading-relaxed tracking-wide">
+        <p className="text-base my-1.5 leading-relaxed tracking-wide text-justify">
           Moreover, Pulse Coding places a strong emphasis on real-world applications and hands-on experience. Through practical projects and industry
           relevant simulations, students gain a deep understanding of how to apply their coding skills in practical scenarios. This practical exposure
           distinguishes Pulse Coding graduates from conventional candidates, as they enter the workforce with a robust foundation and a readiness to
           tackle complex challenges
         </p>
-      </Container>
+      </div>
     </div>
-
   );
 };
 
