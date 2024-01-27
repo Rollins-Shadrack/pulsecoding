@@ -7,9 +7,9 @@ const Reason = () => {
   return (
     <div className="py-14">
       <Container>
-        <div className="lg:w-3/5 mx-auto w-full text-center">
+        <div className="lg:w-3/5 mx-auto mb-10 w-full text-center">
           <h1 className="lg:text-4xl lg:w-4/5 mx-auto text-3xl font-bold tracking-wide">{reasonToTakeCourse.header}</h1>
-          <p className="my-4 leading-6 text-lg text-justify px-4">{reasonToTakeCourse.desc}</p>
+          <p className="my-4 leading-6 text-lg  px-4">{reasonToTakeCourse.desc}</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {reasonToTakeCourse.reason.map((card, idx) => (

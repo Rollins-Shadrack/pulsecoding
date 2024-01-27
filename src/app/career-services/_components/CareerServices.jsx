@@ -9,7 +9,7 @@ const CareerServices = () => {
   return (
     <div className="py-10">
       <Container>
-        <h1 className="font-bold text-3xl lg:text-5xl leading-tight  text-center">{careers.title}</h1>
+        <h1 className="font-bold text-3xl lg:text-5xl leading-tight mb-14  text-center">{careers.title}</h1>
 
         <div className="my-5">
           {careers.items.map((item, idx) => (
