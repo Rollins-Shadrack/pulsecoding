@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { contactUsSchema } from '@/lib/validations/formSchema';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { MailCheck, Send } from 'lucide-react';
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -12,22 +12,26 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { Textarea } from '@/components/ui/textarea';
 import Button from '@/components/Button';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const ContactForm = () => {
-    const form = useForm({
-        resolver: yupResolver(contactUsSchema),
-        defaultValues: {
-            fullName: "",
-            email: "",
-            mobileNumber: "",
-            details:""
-        },
-        mode:"onSubmit"
-    })
+  const recaptchaSiteKey = "6LcONF4pAAAAAAmKQVu-K54kpH5ZWX6ZcQ01g52s"
 
-    async function onSubmit(values) {
-        console.log(values)
-    }
+  const form = useForm({
+    resolver: yupResolver(contactUsSchema),
+    defaultValues: {
+      fullName: "",
+      email: "",
+      mobileNumber: "",
+      details: "",
+      capVal :"",
+    },
+    mode: "onSubmit",
+  });
+
+  async function onSubmit(values) {
+    console.log(values);
+  }
   return (
     <div className="py-16">
       <Container>
@@ -96,9 +100,17 @@ const ContactForm = () => {
                         </FormItem>
                       )}
                     />
-                    {/* <Button className="flex bg-black text-white">
-                      Send <Send />{" "}
-                                      </Button> */}
+                    <FormField
+                      control={form.control}
+                      name="capVal"
+                      render={({ field }) => (
+                        <FormItem>
+                          <ReCAPTCHA {...field} sitekey={recaptchaSiteKey} />
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
                     <Button text="Send" icon={<Send />} className="bg-black text-white " />
                   </form>
                 </Form>
