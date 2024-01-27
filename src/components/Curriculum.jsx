@@ -25,7 +25,7 @@ const Curriculum = () => {
             {Object.keys(curricullum.features).map((tab, idx) => (
               <h1
                 key={idx}
-                className="lg:text-lg text-base font-medium mb-2 inline-flex justify-between cursor-pointer"
+                className="lg:text-lg text-base font-medium mb-2 inline-flex justify-between cursor-pointer whitespace-nowrap"
                 onClick={() => handleFeatureClick(tab)}>
                 <span className={`${tab === selectedFeature ? "text-brandPrimary font-bold" : ""} w-2/3`}>
                   {idx}. {tab}

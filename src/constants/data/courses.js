@@ -30,60 +30,52 @@ export const aboutCourse = {
 };
 
 export const classShedule = {
-    "Starting Monday": {
-      "10:00 - 16:00": {
-        Mon: {},
-        Wed: {},
-        Sat: {
-          title: "Codehang",
-          is: "Optional",
-          duration: "6hrs",
-        },
-      },
-      "18:30 - 21:30": {
-        Mon: {},
-        Wed: {
-          title: "Codehang",
-          is: "Optional",
-          duration: "6hrs",
-        },
-        Sat: {},
-      },
-      Flexible: {
-        Mon: {},
-        Wed: {
-          title: "Codehang",
-          is: "Optional",
-          duration: "6hrs",
-        },
-        Sat: {},
+  "Starting Monday": {
+    "10:00 - 16:00": {
+      Mon: {},
+      Wed: {},
+      Sat: {
+        title: "Codehang",
+        is: "Optional",
+        duration: "6hrs",
       },
     },
-    "Starting Tuesday": {
-      "10:00 - 16:00": {
-        Mon: { title: "Codehang", is: "Optional", duration: "6hrs" },
-        Wed: {},
-        Sat: {},
+    "18:30 - 21:30": {
+      Mon: {},
+      Wed: {
+        title: "Codehang",
+        is: "Optional",
+        duration: "6hrs",
       },
-      "18:30 - 21:30": {
-        Mon: {},
-        Wed: {
-          title: "Codehang",
-          is: "Optional",
-          duration: "6hrs",
-        },
-        Sat: {},
-      },
-      Flexible: {
-        Mon: {},
-        Wed: {
-          title: "Codehang",
-          is: "Optional",
-          duration: "6hrs",
-        },
-        Sat: {},
-      },
+      Sat: {},
     },
+    Flexible: {
+      Mon: { title: "Codehang", is: "Optional", duration: "6hrs" },
+      Wed: {},
+      Sat: {},
+    },
+  },
+  "Starting Tuesday": {
+    "10:00 - 16:00": {
+      Mon: { title: "Codehang", is: "Optional", duration: "6hrs" },
+      Wed: {},
+      Sat: {},
+    },
+    "18:30 - 21:30": {
+      Mon: {},
+      Wed: {
+        title: "Codehang",
+        is: "Optional",
+        duration: "6hrs",
+      },
+      Sat: {},
+    },
+    Flexible: {
+      Mon: {},
+      Wed: {},
+      Sat: { title: "Codehang", is: "Optional", duration: "6hrs" },
+    },
+  },
 };
 
 export const curricullum = {

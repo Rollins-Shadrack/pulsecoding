@@ -1,6 +1,6 @@
 import Bootcamp from "./_components/Bootcamp";
-import Brands from "./_components/Brands";
-import CallToAction from "./_components/CallToAction";
+import Brands from "../../components/Brands";
+import CallToAction from "../../components/CallToAction";
 import Hero from "./_components/Hero"
 import CourseInfo from './_components/coursesInfo'
 
@@ -13,7 +13,7 @@ export default function About() {
     <Hero />
     <Bootcamp />
     <CourseInfo />
-    <Brands />
+    <Brands title="Our graduates have worked in:" />
     <CallToAction/>
     </>);
 }

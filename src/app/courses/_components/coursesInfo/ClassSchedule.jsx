@@ -44,7 +44,7 @@ const ClassSchedule = () => {
 
             {Object.entries(selectedDay).map(([time, days]) => (
               <div key={time} className="flex flex-col">
-                <div className="flex items-center justify-between px-3 lg:text-lg text-xs mb-5 whitespace-nowrap">
+                <div className="flex items-center justify-between px-3  lg:text-lg text-xs  whitespace-nowrap">
                   <p className="font-semibold">{time}</p>
                 </div>
                 <div className="flex justify-between text-xs md:text-base">

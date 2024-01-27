@@ -4,7 +4,7 @@ import Bootcamps from "./_components/Bootcamps";
 import Guide from "./_components/Guide";
 import PaymentOptions from "./_components/PaymentOptions";
 import Alumni from "./_components/Alumni";
-import Stats from "./_components/Stats";
+import Stats from "../components/Stats";
 
 export const metadata = {
   title: "Home Page",

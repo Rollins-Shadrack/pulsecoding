@@ -4,13 +4,13 @@ import Container from '@/components/Container';
 import AboutCourse from './AboutCourse';
 import ClassSchedule from './ClassSchedule';
 import Team from '@/components/Team';
-import Curriculum from './Curriculum';
+import Curriculum from '../../../../components/Curriculum';
 import Finance from './Finance';
 import Dates from './Dates';
 
 const index = () => {
   return (
-    <Tabs defaultValue="schedule" className="w-full">
+    <Tabs defaultValue="about" className="w-full">
       <Container>
         <TabsList className="grid w-full grid-cols-6  mx-auto ">
           <TabsTrigger value="about">About this course</TabsTrigger>
