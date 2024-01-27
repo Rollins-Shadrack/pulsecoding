@@ -14,10 +14,8 @@ const Finance = () => {
       setDuration(event);
       setAmount(event === "12" ? 1500 : 750);
     };
-    console.log("Duration", duration)
-    console.log("amount", amount);
   return (
-    <div className="my-10">
+    <div className="my-16">
       <Container>
         <h1 className="lg:text-4xl text-2xl font-bold">{finance.header}</h1>
         <p className="lg:text-lg text-md my-2">{finance.text}</p>
@@ -66,7 +64,7 @@ const Finance = () => {
                 {finance.card3.cards1.map((card, idx) => (
                   <Card key={idx} className="bg-brandSecondDark border-none text-white py-2 mb-3">
                     <CardDescription className="text-white my-2">{card.text} </CardDescription>
-                    <CardTitle className="font-semibold text-md">{card.number}</CardTitle>
+                    <CardTitle className="font-semibold text-md">{idx === 1 ? duration : card.number}</CardTitle>
                   </Card>
                 ))}
                 <div className="border border-gray-300 my-2"></div>

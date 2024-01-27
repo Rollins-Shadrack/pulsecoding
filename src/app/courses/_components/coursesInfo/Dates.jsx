@@ -6,7 +6,7 @@ import React from 'react'
 
 const Dates = () => {
   return (
-    <div className="py-10">
+    <div className="py-16">
       <Container>
         <div className="lg:w-2/5 w-full mx-auto text-center">
           <h1 className="lg:text-4xl text-2xl font-bold">{dates.header}</h1>

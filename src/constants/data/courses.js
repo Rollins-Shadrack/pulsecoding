@@ -30,25 +30,128 @@ export const aboutCourse = {
 };
 
 export const classShedule = {
-  title: "What you'll learn in this web development bootcamp",
+    "Starting Monday": {
+      "10:00 - 16:00": {
+        Mon: {},
+        Wed: {},
+        Sat: {
+          title: "Codehang",
+          is: "Optional",
+          duration: "6hrs",
+        },
+      },
+      "18:30 - 21:30": {
+        Mon: {},
+        Wed: {
+          title: "Codehang",
+          is: "Optional",
+          duration: "6hrs",
+        },
+        Sat: {},
+      },
+      Flexible: {
+        Mon: {},
+        Wed: {
+          title: "Codehang",
+          is: "Optional",
+          duration: "6hrs",
+        },
+        Sat: {},
+      },
+    },
+    "Starting Tuesday": {
+      "10:00 - 16:00": {
+        Mon: { title: "Codehang", is: "Optional", duration: "6hrs" },
+        Wed: {},
+        Sat: {},
+      },
+      "18:30 - 21:30": {
+        Mon: {},
+        Wed: {
+          title: "Codehang",
+          is: "Optional",
+          duration: "6hrs",
+        },
+        Sat: {},
+      },
+      Flexible: {
+        Mon: {},
+        Wed: {
+          title: "Codehang",
+          is: "Optional",
+          duration: "6hrs",
+        },
+        Sat: {},
+      },
+    },
 };
 
 export const curricullum = {
   header: "What you'll learn in this web development bootcamp",
   text: "Master the technical and project-management skills needed for a successful career in tech, learning how to develop great products in teams using modern workflows.",
-  subtitle: "Preparation work",
-  desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
-  smallsubtitle1: {
-    header: "What you will do in practice",
-    components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
-  },
-  smallsubtitle2: {
-    header: "Software and languages you will learn",
-    components: ["Javascipt", "HTML5", "CSS"],
-  },
-  smalltitle: "Prepwork",
-  indices: ["Foundations", "Foundations", "Foundations", "Foundations", "Foundations", "Foundations"],
   button: "Request Syllabus",
+  features: {
+    Prepwork: {
+      subtitle: "Preparation work",
+      desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+      smallsubtitle1: {
+        header: "What you will do in practice",
+        components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
+      },
+      smallsubtitle2: {
+        header: "Software and languages you will learn",
+        components: ["Javascipt", "HTML5", "CSS"],
+      },
+    },
+    Foundations: {
+      subtitle: "HTML and CSS Foundations",
+      desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+      smallsubtitle1: {
+        header: "What you will do in practice",
+        components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
+      },
+      smallsubtitle2: {
+        header: "Software and languages you will learn",
+        components: ["Javascipt", "HTML5", "CSS"],
+      },
+    },
+    "JS Fundamentals": {
+      subtitle: "JavaScript Fundamentals",
+      desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+      smallsubtitle1: {
+        header: "What you will do in practice",
+        components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
+      },
+      smallsubtitle2: {
+        header: "Software and languages you will learn",
+        components: ["Javascipt", "HTML5", "CSS"],
+      },
+    },
+    "Frontend Frameworks": {
+      subtitle: "Frontend Frameworks and Libraries",
+      desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+      smallsubtitle1: {
+        header: "What you will do in practice",
+        components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
+      },
+      smallsubtitle2: {
+        header: "Software and languages you will learn",
+        components: ["Javascipt", "HTML5", "CSS"],
+      },
+    },
+    "Backend Development": {
+      subtitle: "Backend Development and Databases",
+      desc: "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+      smallsubtitle1: {
+        header: "What you will do in practice",
+        components: ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"],
+      },
+      smallsubtitle2: {
+        header: "Software and languages you will learn",
+        components: ["Javascipt", "HTML5", "CSS"],
+      },
+    },
+  },
 };
 
 export const brands = {

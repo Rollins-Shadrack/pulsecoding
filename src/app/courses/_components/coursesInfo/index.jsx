@@ -10,7 +10,7 @@ import Dates from './Dates';
 
 const index = () => {
   return (
-    <Tabs defaultValue="about" className="w-full">
+    <Tabs defaultValue="schedule" className="w-full">
       <Container>
         <TabsList className="grid w-full grid-cols-6  mx-auto ">
           <TabsTrigger value="about">About this course</TabsTrigger>
