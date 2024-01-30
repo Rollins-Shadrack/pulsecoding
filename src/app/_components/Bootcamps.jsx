@@ -1,41 +1,29 @@
 import React from 'react'
 import { ArrowRight, Check } from "lucide-react";
-import { bootcamp } from '@/constants/data/homepage';
 import Image from 'next/image';
 import Container from '@/components/Container';
+import data from "@/constants/data.json";
 
 
 const Bootcamps = () => {
+  const {header, desc,addons, courses} = data.homepage.bootcamp
   return (
     <div className="py-10">
       <Container>
         <div className="text-center">
-          <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Career-changing bootcamps in Web and Data </h1>
-          <p className="my-3  lg:text-xl leading-relaxed">400-hour programs that have helped thousands of students launch new careers in tech</p>
+          <h1 className="font-bold text-xl lg:text-3xl l leading-tight">{header} </h1>
+          <p className="my-3  lg:text-xl leading-relaxed">{desc}</p>
           <div className="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 my-4">
-            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
-              <Check strokeWidth={3} className="text-red-700 mr-2" />
-              <span className="font-bold">400 hours</span>
-            </div>
-
-            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
-              <Check strokeWidth={3} className="text-red-700 mr-2" />
-              <span className="font-bold">Live Classes</span>
-            </div>
-
-            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
-              <Check strokeWidth={3} className="text-red-700 mr-2" />
-              <span className="font-bold">Flexible 2 to 6 months</span>
-            </div>
-
-            <div className="inline-flex lg:text-xl text-sm lg:mx-auto ">
-              <Check strokeWidth={3} className="text-red-700 mr-2" />
-              <span className="font-bold">On site or online</span>
-            </div>
+            {addons.map((addon, idx) => (
+              <div key={idx} className="inline-flex lg:text-xl text-sm lg:mx-auto ">
+                <Check strokeWidth={3} className="text-red-700 mr-2" />
+                <span className="font-bold">{addon}</span>
+              </div>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
-            {bootcamp.courses.map((course, idx) => (
+            {courses.map((course, idx) => (
               <div key={idx} className="rounded-2xl shadow-lg">
                 <Image src={course.img} width={400} height={200} className="rounded-t-2xl w-full" alt="pulsecoding.com" />
                 <h1 className="text-xl font-bold my-2">{course.title}</h1>

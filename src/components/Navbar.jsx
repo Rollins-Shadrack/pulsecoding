@@ -1,10 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
-import logo from "../../public/logo.png";
 import Link from "next/link";
 import Image from "next/image";
 import { MenuIcon} from "lucide-react";
-import { navItems } from "@/constants/data/navbar";
 import Button from "./Button";
 import {
   DropdownMenu,
@@ -17,7 +15,8 @@ import {
 import { usePathname } from "next/navigation";
 import Container from "./Container";
 
-const Navbar = () => {
+
+const Navbar = ({data}) => {
   const [isSticky, setIsSticky] = useState(false);
   const pathname = usePathname();
 
@@ -42,12 +41,12 @@ const Navbar = () => {
       <nav className={`py-2  ${isSticky ? "sticky top-0 left-0 right-0 border bg-white duration-300 z-[999]" : ""}`}>
         <Container className="flex justify-between items-center text-base ">
           <Link className="" href="/">
-            <Image src={logo} width={100} height={100} className="" />{" "}
+            <Image src={data.logo} width={100} height={100} className="" />{" "}
           </Link>
 
           {/* Navbar items for large screens */}
           <ul className="md:flex space-x-12 hidden cursor-pointer">
-            {navItems.map(({ link, path }) => (
+            {data.navItems.map(({ link, path }) => (
               <Link
                 key={path}
                 href={path}
@@ -60,7 +59,7 @@ const Navbar = () => {
           <div className="space-x-10 flex items-center">
             {/* button for large devices */}
             <Link className="md:flex hidden" href="/">
-              <Button text="Apply Now" className="text-white bg-black hover:bg-brandSecondary uppercase" />
+              <Button text={data.button} className="text-white bg-black hover:bg-brandSecondary uppercase" />
             </Link>
 
             {/* menu btns */}
@@ -73,9 +72,13 @@ const Navbar = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56 mt-4 ">
                   <DropdownMenuGroup>
-                    {navItems.map(({ link, path }) => (
+                    {data.navItems.map(({ link, path }) => (
                       <DropdownMenuItem key={link}>
-                        <Link href={path} className={`block text-base text-brandDark hover:text-brandPrimary  whitespace-nowrap ${pathname === path && "font-medium"}`}>
+                        <Link
+                          href={path}
+                          className={`block text-base text-brandDark hover:text-brandPrimary  whitespace-nowrap ${
+                            pathname === path && "font-medium"
+                          }`}>
                           {link}
                         </Link>
                         <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>

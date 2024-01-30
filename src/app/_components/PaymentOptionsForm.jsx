@@ -58,12 +58,19 @@ const PaymentOptionsForm = () => {
             name="mobileNumber"
             render={({ field }) => (
               <FormItem>
-                <PhoneInput  {...field} placeholder="Enter Mobile Number" className="border-0" />
+                <PhoneInput
+                  {...field}
+                  placeholder="Enter Mobile Number"
+                  // containerStyle={{ width: "100%" }}
+                  inputStyle={{ padding: "18px 43px", width: "100%" }}
+                />
                 <FormMessage />
               </FormItem>
             )}
           />
-          <Button text="Continue" className="bg-black text-white uppercase font-semibold " >Continue</Button>
+          <Button text="Continue" className="bg-black text-white uppercase font-semibold ">
+            Continue
+          </Button>
         </form>
       </Form>
     </div>

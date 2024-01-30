@@ -1,10 +1,11 @@
 'use client'
 import Container from '@/components/Container'
-import { alumnus } from '@/constants/data/homepage';
 import Image from 'next/image';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import data from "@/constants/data.json";
 
 const Alumni = () => {
+  const { header, desc, alumnus } = data.homepage.alumnus;
   return (
     <div className="py-14">
       <Container>
@@ -17,8 +18,8 @@ const Alumni = () => {
           <div className="lg:flex">
             <div className="w-full lg:w-5/12 grid grid-cols-1 mb-3">
               <div className="w-full">
-                <h1 className="font-bold text-xl lg:text-3xl l leading-tight">Alumni </h1>
-                <p className="my-3  text-base">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio .</p>
+                <h1 className="font-bold text-xl lg:text-3xl l leading-tight">{header} </h1>
+                <p className="my-3  text-base">{desc}</p>
               </div>
 
               <div className="space-x-3">

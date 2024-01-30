@@ -1,0 +1,862 @@
+{
+  "navbar": {
+    "logo": "/logo.png",
+    "navItems": [
+      { "link": "Home", "path": "/" },
+      { "link": "About Us", "path": "/about-us" },
+      { "link": "Courses", "path": "/courses" },
+      { "link": "Companies", "path": "/companies" },
+      { "link": "Free Courses", "path": "/free-courses" },
+      { "link": "Career Services", "path": "/career-services" },
+      { "link": "Contact Us", "path": "/contact-us" }
+    ],
+    "button": "Apply now"
+  },
+  "footer": {
+    "about": {
+      "logo": "/logo.png",
+      "description": "Data visualisation and expense management for your business"
+    },
+    "footerLinks": [
+      {
+        "heading": "Company",
+        "links": [
+          { "href": "about-us", "label": "About Us" },
+          { "href": "newsletters", "label": "Newsletters" },
+          { "href": "partners", "label": "Our Partners" },
+          { "href": "career", "label": "Career" },
+          { "href": "contact-us", "label": "Contact Us" }
+        ]
+      },
+      {
+        "heading": "Resources",
+        "links": [
+          { "href": "blog", "label": "Blog" },
+          { "href": "pricing", "label": "Pricing" },
+          { "href": "faq", "label": "FAQ" },
+          { "href": "events", "label": "Events" },
+          { "href": "ebook", "label": "Ebook & Guide" }
+        ]
+      },
+      {
+        "heading": "Follow Us",
+        "links": [
+          { "href": "#_", "label": "LinkedIn" },
+          { "href": "#_", "label": "Twitter" },
+          { "href": "#_", "label": "Instagram" },
+          { "href": "#_", "label": "Facebook" },
+          { "href": "#_", "label": "YouTube" }
+        ]
+      }
+    ],
+    "additionalLinks": [
+      { "href": "privacy-policy", "label": "Privacy Policy" },
+      { "href": "terms", "label": "Terms & Conditions" },
+      { "href": "cookie-policy", "label": " Cookie Policy" }
+    ],
+    "copyright": "Pulse Coding 2024"
+  },
+  "homepage": {
+    "heroSection": {
+      "header": "Unlocking Talent with Pulse Coding",
+      "desc": "In the fast-paced and ever-evolving world of technology, finding skilled and knowledgeable professionals is crucial for the success of any business.",
+      "button1text": "read more",
+      "button2text": "Watch Video",
+      "img": "/hero.png"
+    },
+    "bootcamp": {
+      "header": "Career-changing bootcamps in Web and Data",
+      "desc": "400-hour programs that have helped thousands of students launch new careers in tech",
+      "addons": ["400 hours", "Live Classes", "Flexible 2 to 6 months", "On site or online"],
+      "courses": [
+        {
+          "img": "/bootcamp.jpeg",
+          "title": "Web development",
+          "desc": "Learn to build web applications from scratch and land a job in software development",
+          "button": "Learn web development"
+        },
+        {
+          "img": "/bootcamp.jpeg",
+          "title": "Web development",
+          "desc": "Learn to build web applications from scratch and land a job in software development",
+          "button": "Learn web development"
+        },
+        {
+          "img": "/bootcamp.jpeg",
+          "title": "Web development",
+          "desc": "Learn to build web applications from scratch and land a job in software development",
+          "button": "Learn web development"
+        },
+        {
+          "img": "/bootcamp.jpeg",
+          "title": "Web development",
+          "desc": "Learn to build web applications from scratch and land a job in software development",
+          "button": "Learn web development"
+        }
+      ]
+    },
+    "Guide": {
+      "header": "How it Works",
+      "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit cum odio corrupti. Sint eos officiis unde animi.",
+      "guides": [
+        {
+          "img": "/learn.png",
+          "title": "01. Learn",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia alias inventore?"
+        },
+        {
+          "img": "/graduate.png",
+          "title": "02. Graduate",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia alias inventore?"
+        },
+        {
+          "img": "/work.png",
+          "title": "03. Work",
+          "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia alias inventore?"
+        }
+      ]
+    },
+    "paymentoptions": {
+      "header": "Flexible payment options",
+      "addons": ["Learn now, pay later", "Installment plans", "Upfront"],
+      "subtitle1": "Talk to our advisors",
+      "subtitle2": "to find out how you can get in risk-free",
+      "images": [
+        "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+        "https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
+        "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&&auto=format&fit=facearea&facepad=3&w=300&h=300&q=80",
+        "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80"
+      ]
+    },
+    "alumnus": {
+      "header": "Alumni",
+      "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio .",
+      "alumnus": [
+        {
+          "img": "/alumni1.jpeg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        },
+        {
+          "img": "/alumni2.jpg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        },
+        {
+          "img": "/alumni3.jpeg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        },
+        {
+          "img": "/alumni1.jpeg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        },
+        {
+          "img": "/alumni2.jpg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        },
+        {
+          "img": "/alumni3.jpeg",
+          "name": "Kyler Kisha",
+          "title": "Software Engineering"
+        }
+      ]
+    },
+    "stats": [
+      {
+        "number": "99%",
+        "title": "Team Members"
+      },
+      {
+        "number": "32M",
+        "title": "Active Users"
+      },
+      {
+        "number": "125+",
+        "title": "Team Members"
+      },
+      {
+        "number": "240%",
+        "title": "Company Growth"
+      }
+    ]
+  },
+  "aboutpage": {
+    "herosection": {
+      "header": "About Us",
+      "paragraph1": "In the fast-paced and ever-evolving world of technology, finding skilled and knowledgeable professionals is crucial for the success of anybusiness. Pulse Coding emerges as a game-changer in the recruitment landscape, providing employers with a unique opportunity to tap into apool of highly qualified candidates without the burden of hefty recruitment fees.",
+      "paragraph2": "Pulse Coding is an innovative platform that specializes in training and developing coding talents, equipping them with the technical knowledge and skills needed to thrive in today's competitive tech industry. Graduates from Pulse Coding bring a fresh perspective and awealth of expertise, making them valuable assets for companies seeking to enhance their technical workforce. One of the key advantages of hiring Pulse Coding graduates is the assurance of technical proficiency. The program is designed to cover a comprehensive range of coding  languages, frameworks, and tools, ensuring that graduates possess a well-rounded skill set. Whether it's front-end development, back-end  programming, or full-stack expertise, Pulse Coding graduates are well-prepared to contribute effectively to a variety of projects.",
+      "paragraph3": "Moreover, Pulse Coding places a strong emphasis on real-world applications and hands-on experience. Through practical projects and industry relevant simulations, students gain a deep understanding of how to apply their coding skills in practical scenarios. This practical exposure distinguishes Pulse Coding graduates from conventional candidates, as they enter the workforce with a robust foundation and a readiness to tackle complex challenges"
+    },
+    "faqsSection": {
+      "header": "Why should you join us?",
+      "faqs": [
+        {
+          "question": "Creativity & Quality",
+          "answer": "Our training encourages creative thinking and emphasizes the importance of quality in software engineering. We believe that a combination of creativity and quality craftsmanship leads to effective software solutions."
+        },
+        {
+          "question": "Teamwork & Innovation",
+          "answer": "Teamwork and innovation are core values in our training programs. We cultivate effective teamwork skills through collaborative projects, fostering an environment that encourages innovation and industry best practices."
+        },
+        {
+          "question": "Agency Experience",
+          "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its letter smaking it look like readable English."
+        },
+
+        {
+          "question": "Empathy in Action Simplicity",
+          "answer": "We instill a sense of empathy in our training, encouraging students to understand end-users' needs. We focus on creating user-friendly and accessible software solutions through simplicity in design and functionality."
+        }
+      ]
+    },
+    "stats": [
+      {
+        "number": "10 Years",
+        "title": "in business"
+      },
+      {
+        "number": "85,000+",
+        "title": "customers"
+      },
+      {
+        "number": "100k+",
+        "title": "monthly blog readers"
+      },
+      {
+        "number": "1.2m+",
+        "title": "social followers"
+      }
+    ],
+    "instructorsSection": {
+      "header": "Instructors",
+      "team": [
+        {
+          "img": "/instructor1.jpg",
+          "title": "CEO",
+          "name": "John Kabras"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor1.jpg",
+          "title": "CEO",
+          "name": "John Kabras"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        }
+      ]
+    },
+    "newsLetterSection": {
+      "header": "Enter your Email to get the Latest News",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, aperiam adipisicing elit. Eos, aperiam."
+    }
+  },
+  "coursespage": {
+    "sectionIds": [
+      {
+        "name": " About this course",
+        "id": "about"
+      },
+      {
+        "name": "Class Schedule",
+        "id": "schedule"
+      },
+      {
+        "name": "Curricullum",
+        "id": "curriculum"
+      },
+      {
+        "name": "Team",
+        "id": "team"
+      },
+      {
+        "name": "Finance",
+        "id": "finance"
+      },
+      {
+        "name": "Dates",
+        "id": "dates"
+      }
+    ],
+    "heroSection": {
+      "header": "Courses",
+      "desc": {
+        "one": "Unlock",
+        "two": "Your Creative Potential"
+      }
+    },
+    "bootcampSection": {
+      "smallHeader": "Better Learning, Better Results",
+      "heading": "Bootcamp",
+      "text": "Welcome to an inclusive online education platform that caters to learners of all backgrounds, levels, and aspirations. Our platform is designed to be accessible, flexible, and adaptable, making it the perfect choice for everyone, regardless of age or prior educational experience.",
+      "addons": ["Remote", "Part time", "Beginner Friendly", "Live Classes", "Remote", "Part time", "Beginner Friendly", "Live Classes"],
+      "text2": "Our next course commences on Monday 19th February 2024. Pay a £750 deposit and £271 a month for 24 months with interest-free finance."
+    },
+    "aboutCourseSection": {
+      "title": "About This Course",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "subtitle": "This bootcamp is for you if you...",
+      "features": [
+        {
+          "color": "#ac96e8",
+          "title": "Flexible Learning",
+          "desc": "Study on your terms with self-paced courses, allowing you to learn when it suits you best"
+        },
+        {
+          "color": "#ff8f109e",
+          "title": "Expert Instructors",
+          "desc": "Learn from professionals and experts in their respective fields, ensuring high-quality education"
+        },
+        {
+          "color": "#64d8ff",
+          "title": "Interactive Community",
+          "desc": "Engage with a diverse community of learners, fostering discussions, collaboration, and peer learning."
+        }
+      ]
+    },
+    "classScheduleSection": {
+      "Starting Monday": {
+        "10:00 - 16:00": {
+          "Mon": {},
+          "Wed": {},
+          "Sat": {
+            "title": "Codehang",
+            "is": "Optional",
+            "duration": "6hrs"
+          }
+        },
+        "18:30 - 21:30": {
+          "Mon": {},
+          "Wed": {
+            "title": "Codehang",
+            "is": "Optional",
+            "duration": "6hrs"
+          },
+          "Sat": {}
+        },
+        "Flexible": {
+          "Mon": { "title": "Codehang", "is": "Optional", "duration": "6hrs" },
+          "Wed": {},
+          "Sat": {}
+        }
+      },
+      "Starting Tuesday": {
+        "10:00 - 16:00": {
+          "Mon": { "title": "Codehang", "is": "Optional", "duration": "6hrs" },
+          "Wed": {},
+          "Sat": {}
+        },
+        "18:30 - 21:30": {
+          "Mon": {},
+          "Wed": {
+            "title": "Codehang",
+            "is": "Optional",
+            "duration": "6hrs"
+          },
+          "Sat": {}
+        },
+        "Flexible": {
+          "Mon": {},
+          "Wed": {},
+          "Sat": { "title": "Codehang", "is": "Optional", "duration": "6hrs" }
+        }
+      }
+    },
+    "curricullumSection": {
+      "header": "What you'll learn in this web development bootcamp",
+      "text": "Master the technical and project-management skills needed for a successful career in tech, learning how to develop great products in teams using modern workflows.",
+      "button": "Request Syllabus",
+      "features": {
+        "Prepwork": {
+          "subtitle": "Preparation work",
+          "desc": "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+          "smallsubtitle1": {
+            "header": "What you will do in practice",
+            "components": ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"]
+          },
+          "smallsubtitle2": {
+            "header": "Software and languages you will learn",
+            "components": ["Javascipt", "HTML5", "CSS"]
+          }
+        },
+        "Foundations": {
+          "subtitle": "HTML and CSS Foundations",
+          "desc": "Throughout this course, participants will delve into the fundamental building blocks of web development - HTML (HyperText Markup Language) and CSS (Cascading Style Sheets).",
+          "smallsubtitle1": {
+            "header": "Hands-On Learning Experience",
+            "components": ["Interactive coding exercises for practical application", "Real-world projects to reinforce concepts"]
+          },
+          "smallsubtitle2": {
+            "header": "Technologies Covered in Depth",
+            "components": ["In-depth  functionalities", "Advanced  HTML5 and CSS"]
+          }
+        },
+        "JS Fundamentals": {
+          "subtitle": "JavaScript Fundamentals",
+          "desc": "Throughout this course, participants will embark on a learning journey that covers essential topics and hands-on exercises aimed at building a solid foundation in JavaScript.",
+
+          "smallsubtitle1": {
+            "header": "Practical Skills Covered",
+            "components": ["Hands-on coding exercises", "Project-based learning tasks"]
+          },
+          "smallsubtitle2": {
+            "header": "Technologies Explored",
+            "components": ["Node.js", "React.js", "Git"]
+          }
+        },
+        "Frontend Frameworks": {
+          "subtitle": "Frontend Frameworks and Libraries",
+          "desc": "In this course, participants will delve into various frontend frameworks, which are comprehensive libraries or tools that streamline the process of developing interactive and responsive web applications.",
+          "smallsubtitle1": {
+            "header": "Hands-on Learning Experience",
+            "components": [
+              "Build interactive user interfaces from scratch",
+              "Create responsive web applications",
+              "Participate in real-world coding projects"
+            ]
+          },
+          "smallsubtitle2": {
+            "header": "Tools and Technologies Covered",
+            "components": ["React.js for UIs", "Tailwind css design", "Web development "]
+          }
+        },
+        "Backend Development": {
+          "subtitle": "Backend Development and Databases",
+          "desc": "In a Backend Development course, learners will delve into the following key aspects:",
+          "smallsubtitle1": {
+            "header": "Hands-on Practical Experience",
+            "components": ["Build scalable server-side applications", "Design and implement robust databases"]
+          },
+          "smallsubtitle2": {
+            "header": "Key Technologies Covered",
+            "components": ["Node.js for server-side ", "Database management"]
+          }
+        }
+      }
+    },
+    "instructorsSection": {
+      "header": "Our Team",
+      "team": [
+        {
+          "img": "/instructor1.jpg",
+          "title": "CEO",
+          "name": "John Kabras"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor1.jpg",
+          "title": "CEO",
+          "name": "John Kabras"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        },
+        {
+          "img": "/instructor4.jpg",
+          "title": "Head of UX",
+          "name": "Janka Indrajith"
+        },
+        {
+          "img": "/instructor2.jpg",
+          "title": "COO",
+          "name": "Philips Shene Moris"
+        },
+        {
+          "img": "/instructor3.jpeg",
+          "title": "Tech Lead",
+          "name": "Equarn shamir mohamad"
+        }
+      ]
+    },
+    "financeSection": {
+      "header": "Financing Your Studies",
+      "text": "With the option to pay your course fees over 6, 12 and 24 months, our finance options allow you the flexibility to commence your studies sooner.",
+      "card1": {
+        "header": "Installments",
+        "text": "Pay your course fees over 12 or 24 monthly instalments at 0% APR. In partnership with EdAid"
+      },
+      "card2": {
+        "header1": "Course fees",
+        "text1": "Total Course fees inc. VAT:£7250",
+        "header2": "Deposit amount",
+        "text2": "Minimum deposit £750"
+      },
+      "card3": {
+        "header": "Totals",
+        "text": "Pre and post tax estimates"
+      }
+    },
+    "dates": {
+      "header": "Admission",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+      "img": "/dates.jpeg",
+      "cards": [
+        {
+          "number": 1,
+          "header": "What is Lorem Ipsum?",
+          "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+        },
+        {
+          "number": 2,
+          "header": "Create shocking experiences",
+          "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at it's layout"
+        },
+        {
+          "number": 3,
+          "header": "Where does it come from?",
+          "text": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Lating literature from 45 BC, making it over 2000 years old"
+        },
+        {
+          "number": 4,
+          "header": "Where can I get some?",
+          "text": "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form, bu injected humour"
+        }
+      ]
+    },
+    "brandsSection": {
+      "title": "Our graduates have worked in",
+      "brands": [
+        "/clickup.png",
+        "/gropbox.png",
+        "/elastic.png",
+        "/github.png",
+        "/freshbooks.png",
+        "/helpscout.png",
+        "/intuit.png",
+        "/google.png",
+        "/paychex.png",
+        "/salesforce.png",
+        "/sap.png",
+        "/twiliosegment.png",
+        "/servicenow.png",
+        "/shopify.png"
+      ]
+    },
+    "callToActionSection": {
+      "text": "Still Confused About Your Career Choices? Consult with Our Experts",
+      "img": "/calltoaction.png"
+    }
+  },
+  "companiespage": {
+    "heroSection": {
+      "title": "Your Gateway to Top Companies",
+      "desc": "Explore the essential skills needed to thrive in the tech industry through our comprehensive bootcamp.",
+      "addons": ["Industry-Relevant Curriculum", "Career Guidance", "Hands-On Projects"],
+      "text1": "Join our bootcamp and position yourself for exciting opportunities",
+      "text2": "Open doors to collaborations with leading companies in the tech ecosystem.",
+      "img": "/companies.jpg"
+    },
+    "brandsSection": {
+      "title": "Top Companies",
+      "brands": [
+        "/clickup.png",
+        "/gropbox.png",
+        "/elastic.png",
+        "/github.png",
+        "/freshbooks.png",
+        "/helpscout.png",
+        "/intuit.png",
+        "/google.png",
+        "/paychex.png",
+        "/salesforce.png",
+        "/sap.png",
+        "/twiliosegment.png",
+        "/servicenow.png",
+        "/shopify.png"
+      ]
+    }
+  },
+  "freecoursespage": {
+    "sectionIds": [
+      {
+        "name": "Curricullum",
+        "id": "curriculum"
+      },
+      {
+        "name": "FAQS",
+        "id": "faqs"
+      },
+      {
+        "name": "Why Take this Course?",
+        "id": "reason"
+      }
+    ],
+    "heroSection": {
+      "title": "Intro",
+      "desc": "Gain a basic understanding of JavaScript - one of the most sought after programming languages in the tech industry",
+      "addons": ["Online", "Beginner Friendly", "25 Hours of Content"],
+      "text1": "Our INTRO course is completely FREE",
+      "text2": "Get started now on your journey into Software development",
+      "img": "/freecourse.jpg"
+    },
+    "reasonToTakeCourseSection": {
+      "header": "Journey into JavaScript Excellence",
+      "desc": "Embark on a journey into JavaScript excellence and elevate your coding prowess with our comprehensive course",
+      "reason": [
+        {
+          "title": "Building a Strong Foundation",
+          "desc": "An introductory JavaScript course provides a solid foundation for understanding the core concepts of programming, helping learners build a strong base for advanced coding skills."
+        },
+        {
+          "title": "Versatility in Web Development",
+          "desc": "JavaScript is a versatile language used for both front-end and back-end web development. Learning the basics opens the door to creating dynamic and interactive websites."
+        },
+        {
+          "title": "In-Demand Skill in the Job Market",
+          "desc": "JavaScript skills are highly sought after in the job market. Taking an introductory course enhances your employability and opens up opportunities in the tech industry."
+        },
+        {
+          "title": "Enhancing Problem-Solving Skills",
+          "desc": "Programming challenges in an intro to JavaScript course help develop problem-solving skills. Learners gain the ability to break down complex problems into manageable tasks."
+        },
+        {
+          "title": "Interactive Web Experiences",
+          "desc": "JavaScript is instrumental in creating interactive elements on websites. Understanding its fundamentals enables you to add engaging features and improve user experiences."
+        },
+        {
+          "title": "Preparation for Advanced Programming",
+          "desc": "Intro to JavaScript serves as a stepping stone for learning other programming languages and technologies, preparing learners for more advanced and specialized areas in software development."
+        }
+      ]
+    },
+    "faqsSection": {
+      "header": "Why should you join us?",
+      "faqs": [
+        {
+          "question": "Creativity & Quality",
+          "answer": "Our training encourages creative thinking and emphasizes the importance of quality in software engineering. We believe that a combination of creativity and quality craftsmanship leads to effective software solutions."
+        },
+        {
+          "question": "Teamwork & Innovation",
+          "answer": "Teamwork and innovation are core values in our training programs. We cultivate effective teamwork skills through collaborative projects, fostering an environment that encourages innovation and industry best practices."
+        },
+        {
+          "question": "Agency Experience",
+          "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its letter smaking it look like readable English."
+        },
+
+        {
+          "question": "Empathy in Action Simplicity",
+          "answer": "We instill a sense of empathy in our training, encouraging students to understand end-users' needs. We focus on creating user-friendly and accessible software solutions through simplicity in design and functionality."
+        }
+      ]
+    },
+    "curricullumSection": {
+      "header": "What you'll learn in this web development bootcamp",
+      "text": "Master the technical and project-management skills needed for a successful career in tech, learning how to develop great products in teams using modern workflows.",
+      "button": "Request Syllabus",
+      "features": {
+        "Prepwork": {
+          "subtitle": "Preparation work",
+          "desc": "Our web development course is very intense. To be prepared and make the most out of the bootcamp, you must complete 4¼ hours of preparation work to give you basic tech foundations and culture.",
+          "smallsubtitle1": {
+            "header": "What you will do in practice",
+            "components": ["40 hours of online tutorials", "Online quiz to validate basic tech knowledge"]
+          },
+          "smallsubtitle2": {
+            "header": "Software and languages you will learn",
+            "components": ["Javascipt", "HTML5", "CSS"]
+          }
+        },
+        "Foundations": {
+          "subtitle": "HTML and CSS Foundations",
+          "desc": "Throughout this course, participants will delve into the fundamental building blocks of web development - HTML (HyperText Markup Language) and CSS (Cascading Style Sheets).",
+          "smallsubtitle1": {
+            "header": "Hands-On Learning Experience",
+            "components": ["Interactive coding exercises for practical application", "Real-world projects to reinforce concepts"]
+          },
+          "smallsubtitle2": {
+            "header": "Technologies Covered in Depth",
+            "components": ["In-depth  functionalities", "Advanced  HTML5 and CSS"]
+          }
+        },
+        "JS Fundamentals": {
+          "subtitle": "JavaScript Fundamentals",
+          "desc": "Throughout this course, participants will embark on a learning journey that covers essential topics and hands-on exercises aimed at building a solid foundation in JavaScript.",
+
+          "smallsubtitle1": {
+            "header": "Practical Skills Covered",
+            "components": ["Hands-on coding exercises", "Project-based learning tasks"]
+          },
+          "smallsubtitle2": {
+            "header": "Technologies Explored",
+            "components": ["Node.js", "React.js", "Git"]
+          }
+        },
+        "Frontend Frameworks": {
+          "subtitle": "Frontend Frameworks and Libraries",
+          "desc": "In this course, participants will delve into various frontend frameworks, which are comprehensive libraries or tools that streamline the process of developing interactive and responsive web applications.",
+          "smallsubtitle1": {
+            "header": "Hands-on Learning Experience",
+            "components": [
+              "Build interactive user interfaces from scratch",
+              "Create responsive web applications",
+              "Participate in real-world coding projects"
+            ]
+          },
+          "smallsubtitle2": {
+            "header": "Tools and Technologies Covered",
+            "components": ["React.js for UIs", "Tailwind css design", "Web development "]
+          }
+        },
+        "Backend Development": {
+          "subtitle": "Backend Development and Databases",
+          "desc": "In a Backend Development course, learners will delve into the following key aspects:",
+          "smallsubtitle1": {
+            "header": "Hands-on Practical Experience",
+            "components": ["Build scalable server-side applications", "Design and implement robust databases"]
+          },
+          "smallsubtitle2": {
+            "header": "Key Technologies Covered",
+            "components": ["Node.js for server-side ", "Database management"]
+          }
+        }
+      }
+    },
+    "callToActionSection": {
+      "text": "Still Confused About Your Career Choices? Consult with Our Experts",
+      "img": "/calltoaction.png"
+    }
+  },
+  "careerservicespage": {
+    "heroSection": {
+      "title": "Get your dream job with our career services",
+      "desc": "Our Career services will get you ready to land a job in tech through personal coaching and network of 1000+ hiring partners",
+      "button": "Download out job report"
+    },
+    "careerserviceSection": {
+      "title": "Our Career services will be here for you",
+      "items": [
+        {
+          "img": "/careerservice.jpg",
+          "cards": [
+            {
+              "title": "Benefit from one on one coaching",
+              "desc": "Meet our Career team for a 1:1 to help guide you in your career path and review your application strategy and documents."
+            },
+            {
+              "title": "Meet out Hiring network",
+              "desc": "We have more than 985 hiring partners. We organize regular recruiting events where you can speak directly to company representatives and share regular job offers between alumni."
+            }
+          ]
+        },
+        {
+          "img": "/careerservice2.jpg",
+          "cards": [
+            {
+              "title": "Get job offers by our Alumni",
+              "desc": "You’ll be part of a global community with 24,000 Alumni worldwide with lifetime access to Pulse Coding alumni slack channel."
+            },
+            {
+              "title": "Get access to Pulse Coding content",
+              "desc": "You will have access to Pulse Coding career and course resources for life, including a selection of top PERKS with 30+ companies including AWS, Angolia, Go Rails."
+            }
+          ]
+        }
+      ]
+    },
+    "eventsSection": {
+      "title": "Attend dedicated Pulse Coding hiring events",
+      "desc": "Through job fairs, networking and get me hired events and talks, our careers team will introduce you to the right hiring partner - depending on your goal, your project, and your dream job.",
+      "images": ["/event1.jpg", "/event2.jpg", "/event3.jpg", "/event4.jpg"]
+    },
+    "stats": [
+      {
+        "number": "99%",
+        "title": "Team Members"
+      },
+      {
+        "number": "32M",
+        "title": "Active Users"
+      },
+      {
+        "number": "125+",
+        "title": "Team Members"
+      },
+      {
+        "number": "240%",
+        "title": "Company Growth"
+      }
+    ]
+  },
+  "contactuspage": {
+    "heroSection": {
+      "header": "Contact Us"
+    },
+    "ContactFormSection": {
+      "header": "Get In Touch",
+      "desc": "Reach out to us with any question, inquiries or collaboration opportunities. we're here to listen and respond promptly",
+      "subtitle": "Reach Out to Us"
+    }
+  }
+}

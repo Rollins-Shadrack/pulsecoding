@@ -1,10 +1,10 @@
 import Container from '@/components/Container'
-import { stats } from '@/constants/data/homepage'
+import { cn } from '@/lib/utils';
 import React from 'react'
 
-const Stats = () => {
+const Stats = ({stats, className}) => {
   return (
-    <div className="py-24 text-white bg-black">
+    <div  className={cn('py-24', className)}>
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 text-center">
           {stats.map((stat, idx) => (

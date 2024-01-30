@@ -1,13 +1,15 @@
-import Container from '@/components/Container'
-import { Card, CardDescription } from '@/components/ui/card';
-import { dates } from '@/constants/data/courses';
-import Image from 'next/image';
-import React from 'react'
-
+import Container from "@/components/Container";
+import { Card, CardDescription } from "@/components/ui/card";
+import Image from "next/image";
+import React from "react";
+import TabsNav from "./TabsNav";
+import data from "@/constants/data.json";
 const Dates = () => {
+  const { dates } = data.coursespage;
   return (
-    <div className="py-16">
-      <Container>
+    <div className="py-16" id="dates">
+      <TabsNav active="dates" />
+      <Container className="mt-20">
         <div className="lg:w-2/5 w-full mx-auto text-center">
           <h1 className="lg:text-4xl text-2xl font-bold">{dates.header}</h1>
           <p className="lg:text-lg text-md my-2">{dates.text}</p>
@@ -44,6 +46,6 @@ const Dates = () => {
       </Container>
     </div>
   );
-}
+};
 
-export default Dates
+export default Dates;

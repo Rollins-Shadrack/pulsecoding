@@ -14,7 +14,7 @@ import { Textarea } from '@/components/ui/textarea';
 import Button from '@/components/Button';
 import ReCAPTCHA from 'react-google-recaptcha';
 
-const ContactForm = () => {
+const ContactForm = ({data}) => {
   const recaptchaSiteKey = "6LcONF4pAAAAAAmKQVu-K54kpH5ZWX6ZcQ01g52s"
 
   const form = useForm({
@@ -36,10 +36,14 @@ const ContactForm = () => {
     <div className="py-16">
       <Container>
         <div className="lg:w-2/3 w-full mx-auto">
+          <h1 className="font-bold text-3xl lg:text-5xl leading-tight uppercase text-center">{data.header}</h1>
+          <p className="my-5 lg:text-lg text-base text-center tracking-wider">
+            {data.desc}
+          </p>
           <Card>
             <CardHeader>
               <CardTitle className="inline-flex items-center justify-center">
-                Reach Out to Us <MailCheck className="w-8 h-8 ml-2" />
+                {data.subtitle} <MailCheck className="w-8 h-8 ml-2" />
               </CardTitle>
               <CardContent>
                 <Form {...form}>

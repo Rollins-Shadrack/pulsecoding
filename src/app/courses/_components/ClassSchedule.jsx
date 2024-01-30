@@ -1,28 +1,30 @@
-'use client'
+"use client";
 import Container from "@/components/Container";
-import { Card, CardTitle } from "@/components/ui/card";
-import { classShedule } from "@/constants/data/courses";
+import { CardTitle } from "@/components/ui/card";
 import React, { useState } from "react";
-
+import TabsNav from "./TabsNav";
+import data from "@/constants/data.json";
 const ClassSchedule = () => {
-  const [day, setDay] = useState(Object.keys(classShedule)[0]);
+  const { classScheduleSection } = data.coursespage;
+  const [day, setDay] = useState(Object.keys(classScheduleSection)[0]);
   const daysOfWeek = ["Mon", "Wed", "Sat"];
 
   const handleDayClick = (day) => {
-    setDay(day)
-  }
+    setDay(day);
+  };
 
-  const selectedDay = classShedule[day]
-  
+  const selectedDay = classScheduleSection[day];
+
   return (
-    <div className="py-16">
-      <Container>
+    <div className="py-16" id="schedule">
+      <TabsNav active="schedule" />
+      <Container className="mt-20">
         <div className="flex h-64 md:h-80 lg:h-96">
           <div className="rotate-180 " style={{ writingMode: "vertical-rl" }}>
             <div className="text-center">
               <CardTitle className="whitespace-nowrap text-center">Class Schedule</CardTitle>
               <div className="flex items-center justify-between border-l  whitespace-nowrap text-xs md:text-base cursor-pointer">
-                {Object.keys(classShedule).map((days, idx) => (
+                {Object.keys(classScheduleSection).map((days, idx) => (
                   <div
                     key={idx}
                     onClick={() => handleDayClick(days)}
@@ -72,5 +74,3 @@ const ClassSchedule = () => {
 };
 
 export default ClassSchedule;
-
-

@@ -4,8 +4,10 @@ import Curriculum from '@/components/Curriculum';
 import Container from '@/components/Container';
 import FAQ from '@/components/FAQ';
 import Reason from './Reason';
+import data from '@/constants/data.json'
 
 const index = () => {
+  const { curricullumSection, faqsSection, reasonToTakeCourseSection } = data.freecoursespage;
   return (
     <Tabs defaultValue="curriculum" className="w-full my-14">
       <Container>
@@ -16,13 +18,13 @@ const index = () => {
         </TabsList>
       </Container>
       <TabsContent value="curriculum">
-        <Curriculum />
+        <Curriculum data={curricullumSection} />
       </TabsContent>
       <TabsContent value="faqs">
-        <FAQ Bodyclass="my-5 py-10 flex flex-col items-center " />
+        <FAQ data={faqsSection} Bodyclass="my-5 py-10 flex flex-col items-center " />
       </TabsContent>
       <TabsContent value="reason">
-        <Reason />
+        <Reason data={reasonToTakeCourseSection} />
       </TabsContent>
     </Tabs>
   );

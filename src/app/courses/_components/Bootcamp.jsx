@@ -1,33 +1,33 @@
 import Container from '@/components/Container'
-import { bootcamp } from '@/constants/data/courses';
 import Image from 'next/image';
 import React from 'react'
 import {ArrowRight, Check} from 'lucide-react'
 import Button from '@/components/Button';
-
+import data from "@/constants/data.json";
 const Bootcamp = () => {
+  const { bootcampSection } = data.coursespage;
   return (
     <div className="my-14 ">
       <Container>
         <div className="lg:flex lg:space-x-20 ">
           <div className=" lg:w-7/12 w-full mx-auto">
-            <h1 className="text-lg font-semibold text-black">{bootcamp.smallHeader}</h1>
-            <h1 className="lg:text-6xl text-4xl  font-bold uppercase my-3 tracking-wider">{bootcamp.heading}</h1>
-            <p className="text-base">{bootcamp.text}</p>
+            <h1 className="text-lg font-semibold text-black">{bootcampSection.smallHeader}</h1>
+            <h1 className="lg:text-6xl text-4xl  font-bold uppercase my-3 tracking-wider">{bootcampSection.heading}</h1>
+            <p className="text-base">{bootcampSection.text}</p>
             <div className="my-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              {bootcamp.addons.map((addon, idx) => (
+              {bootcampSection.addons.map((addon, idx) => (
                 <div key={idx} className="inline-flex  text-sm ">
                   <Check strokeWidth={3} className="text-green-700 mr-2" />
                   <span className="font-semibold whitespace-nowrap">{addon}</span>
                 </div>
               ))}
             </div>
-            <p className="text-base">{bootcamp.text2}</p>
+            <p className="text-base">{bootcampSection.text2}</p>
 
-            <div className="inline-flex justify-between lg:w-3/4 w-full my-5 space-x-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10  lg:w-3/4 w-full my-5">
               <Button text="apply" className="bg-black text-white uppercase" />
 
-              <div className="flex justify-center items-center border-2 border-black rounded-lg px-4 py-2 whitespace-nowrap ">
+              <div className="flex text-base  justify-center items-center border-2 border-black rounded-lg px-4 py-2 whitespace-nowrap">
                 Request a Prospectus <ArrowRight className="w-6 h-6 ml-2 text-bold" />
               </div>
             </div>
@@ -44,7 +44,7 @@ const Bootcamp = () => {
                 <Image src="/bootcamp1.jpeg" width={600} height={500} className="object-fill h-48 w-96" />
               </div>
 
-              <div className="h-64 w-64 p-2 border rounded absolute left-[28%] top-[30%] md:left-[20%] md:top-[15%] lg:left-[28%] lg:top-[10%] bg-gray-300 rotate-3">
+              <div className="h-64 w-64 p-2 border rounded absolute left-[18%] top-[30%] md:left-[20%] md:top-[15%] lg:left-[28%] lg:top-[10%] bg-gray-300 rotate-3">
                 <Image src="/bootcamp2.jpeg" width={600} height={500} className="object-cover " />
               </div>
             </div>
