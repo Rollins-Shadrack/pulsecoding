@@ -11,7 +11,7 @@ const CareerServices = ({data}) => {
 
         <div className="my-5">
           {data.items.map((item, idx) => (
-            <div key={idx} className={`lg:flex ${idx % 2 === 1 ? " flex-row-reverse" : ""}`}>
+            <div key={idx} className={`lg:flex items-center justify-center ${idx % 2 === 1 ? " flex-row-reverse" : ""}`}>
               <div className="lg:w-1/2 w-full flex items-center justify-center">
                 <Image src={item.img} width={480} height={400} alt="pulsecoding.com" className="rounded-lg" />
               </div>

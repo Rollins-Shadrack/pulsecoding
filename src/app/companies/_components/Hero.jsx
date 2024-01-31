@@ -15,7 +15,7 @@ const Hero = () => {
             <h1 className="font-bold text-3xl lg:text-4xl leading-tight uppercase">{heroSection.title}</h1>
             <p className="my-5 text-base">{heroSection.desc}</p>
 
-            <div className="my-5 grid grid-cols-1 mg:grid-cols-3 gap-5">
+            <div className="my-5 grid grid-cols-1 md:grid-cols-3 gap-5">
               {heroSection.addons.map((addon, idx) => (
                 <div key={idx} className="inline-flex  text-sm ">
                   <Check strokeWidth={3} className="text-green-700 mr-2" />

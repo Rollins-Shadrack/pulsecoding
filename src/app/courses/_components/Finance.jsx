@@ -22,10 +22,6 @@ const Finance = () => {
     setInstallments(newInstallments);
   };
 
-  // const handleInstallmentsChange = (event) => {
-  //   const newInstallments = parseInt(event, 10) || 6;
-  //   setInstallments(newInstallments);
-  // };
 
   return (
     <div className="py-10" id="finance">
@@ -33,15 +29,15 @@ const Finance = () => {
         <h1 className="lg:text-4xl text-2xl font-bold">{financeSection.header}</h1>
         <p className="lg:text-lg text-md my-2 ">{financeSection.text}</p>
         <div className="lg:flex mt-7">
-          <div className="lg:w-7/12 w-full">
-            <div className="lg:w-4/5 px-5 mx-auto">
-              <Card className="my-4 py-6  shadow-lg ">
+          <div className="lg:w-7/12 w-full flex flex-col">
+            <div className="lg:w-4/5 px-5 mx-auto flex flex-col">
+              <Card className="my-4 py-6  shadow-lg pb-14 flex-1">
                 <div className="w-10/12 mx-auto">
                   <CardTitle className="font-semibold text-center lg:text-2xl text-lg">{financeSection.card1.header}</CardTitle>
                   <CardDescription className="text-center">{financeSection.card1.text}</CardDescription>
                 </div>
               </Card>
-              <Card className="shadow-lg my-4 py-4 ">
+              <Card className="shadow-lg my-4 py-4 flex-1 pb-16 ">
                 <div className="w-10/12 mx-auto">
                   <CardTitle className="font-semibold text-md">{financeSection.card2.header1}</CardTitle>
                   <CardDescription>{financeSection.card2.text1} </CardDescription>
@@ -57,50 +53,34 @@ const Finance = () => {
                       <option value="12">12 months</option>
                       <option value="24">24 months</option>
                     </select>
-                    {/* <Select onValueChange={handleInstallmentsChange} defaultValue={installments} className="w-[180px]">
-                      
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select a duration">
-                            {installments === "6" && "6 months"}
-                            {installments === "12" && "12 months"}
-                            {installments === "24" && "24 months"}
-                          </SelectValue>
-                        </SelectTrigger>
-                      
-                      <SelectContent>
-                        <SelectItem value="6">6 months</SelectItem>
-                        <SelectItem value="12">12 months</SelectItem>
-                        <SelectItem value="24">24 months</SelectItem>
-                      </SelectContent>
-                    </Select> */}
                   </div>
                 </div>
               </Card>
             </div>
           </div>
           <div className="lg:w-5/12 w-full">
-            <Card className="bg-brandDark text-white py-4 text-center my-4">
+            <Card className="bg-gray-800 text-white py-4 text-center my-4">
               <div className="w-10/12 mx-auto">
                 <CardTitle className="font-semibold text-md">{financeSection.card3.header}</CardTitle>
                 <CardDescription className="text-white my-2">{financeSection.card3.text}</CardDescription>
-                <Card className="bg-brandSecondDark border-none text-white py-2 mb-3">
+                <Card className="bg-gray-600 border-none text-white py-2 mb-3">
                   <CardDescription className="text-white my-2">Deposit amount </CardDescription>
                   <CardTitle className="font-semibold text-md">£{amount}</CardTitle>
                 </Card>
-                <Card className="bg-brandSecondDark border-none text-white py-2 mb-3">
+                <Card className="bg-gray-600 border-none text-white py-2 mb-3">
                   <CardDescription className="text-white my-2">Number of installments </CardDescription>
                   <CardTitle className="font-semibold text-md">{installments}</CardTitle>
                 </Card>
-                <Card className="bg-brandSecondDark border-none text-white py-2 mb-3">
+                <Card className="bg-gray-600 border-none text-white py-2 mb-3">
                   <CardDescription className="text-white my-2">Interest Rate</CardDescription>
                   <CardTitle className="font-semibold text-md">0%</CardTitle>
                 </Card>
                 <div className="border border-gray-300 my-2"></div>
-                <Card className="bg-brandSecondDark border-none text-white py-2 mb-3">
+                <Card className="bg-gray-600 border-none text-white py-2 mb-3">
                   <CardDescription className="text-white my-2">Monthly Installments</CardDescription>
                   <CardTitle className="font-semibold text-md">£{amountPerInstallment.toFixed(2)}</CardTitle>
                 </Card>
-                <Card className="bg-brandSecondDark border-none text-white py-2 mb-3">
+                <Card className="bg-gray-600 border-none text-white py-2 mb-3">
                   <CardDescription className="text-white my-2">Total repayment</CardDescription>
                   <CardTitle className="font-semibold text-md">£{(totalCourseFee - amount).toFixed(2)}</CardTitle>
                 </Card>
