@@ -2,19 +2,17 @@ import Container from "@/components/Container";
 import { Card, CardDescription } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
-import TabsNav from "./TabsNav";
 import data from "@/constants/data.json";
 const Dates = () => {
   const { dates } = data.coursespage;
   return (
     <div className="py-16" id="dates">
-      <TabsNav active="dates" />
-      <Container className="mt-20">
+      <div>
         <div className="lg:w-2/5 w-full mx-auto text-center">
           <h1 className="lg:text-4xl text-2xl font-bold">{dates.header}</h1>
           <p className="lg:text-lg text-md my-2">{dates.text}</p>
         </div>
-        <div className="lg:flex items-center lg:space-x-32 mt-5 ">
+        <div className="lg:flex items-center lg:space-x-10 mt-5 ">
           <div className="lg:w-2/3 w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {dates.cards.map((card, idx) => (
@@ -43,7 +41,7 @@ const Dates = () => {
             />
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

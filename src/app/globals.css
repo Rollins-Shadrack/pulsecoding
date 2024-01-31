@@ -78,41 +78,39 @@
 
 @layer base {
   html {
-  scroll-behavior: smooth;
-}
-  * {
-  scrollbar-width: thin;
-  scrollbar-color: var(--secondary) var(--primary);
-}
-
-*::-webkit-scrollbar {
-  width: 13px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--primary);
-  border-radius: 5px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--secondary);
-  border-radius: 14px;
-  border: 3px solid var(--primary);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--tertiary);
-}
-
-@media screen and (min-width: 1600px) {
-  .main-container, nav {
-    max-width: 1600px;
-    margin: 0 auto;
+    scroll-behavior: smooth;
   }
-}
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
+  }
 
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
 
+  *::-webkit-scrollbar-track {
+    background: var(--primary);
+    border-radius: 5px;
+  }
 
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 14px;
+    border: 3px solid var(--primary);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--tertiary);
+  }
+
+  @media screen and (min-width: 1600px) {
+    .main-container,
+    nav {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  }
 }
 
 @layer utilities {

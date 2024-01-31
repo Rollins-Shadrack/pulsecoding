@@ -11,9 +11,12 @@ export const newsLetterSchema = Yup.object().shape({
 });
 
 export const contactUsSchema = Yup.object().shape({
-  fullName: Yup.string().required("Fullname is required"),
+  firstName: Yup.string().required("First name is required"),
+  surname: Yup.string().required("Surname is required"),
   email: Yup.string().email("Invalid Email address").required("Email is required"),
   mobileNumber: Yup.string().required("Mobile number is required!").min(8, "Mobile number is too short").max(15, "Mobile number is too long"),
-  details: Yup.string().required("This field is required"),
+  city: Yup.string().required("City is required"),
+  country: Yup.string().required("Country is required"),
+  message: Yup.string().required("This field is required"),
   capVal: Yup.string().required("This field is required"),
 });

@@ -360,49 +360,53 @@
     },
     "classScheduleSection": {
       "Starting Monday": {
-        "10:00 - 16:00": {
+        "10:00 - 15:00": {
           "Mon": {},
           "Wed": {},
           "Sat": {
-            "title": "Codehang",
-            "is": "Optional",
-            "duration": "6hrs"
+            "title": "New Cohort",
+            "is": "May 11th, 2024",
+            "duration": "5hrs"
           }
         },
         "18:30 - 21:30": {
-          "Mon": {},
+          "Mon": {
+            "title": "New Cohort",
+            "is": "May 6th, 2024",
+            "duration": "3hrs"
+          },
           "Wed": {
-            "title": "Codehang",
-            "is": "Optional",
-            "duration": "6hrs"
+            "title": "New Cohort",
+            "is": "May 8th, 2024",
+            "duration": "3hrs"
           },
           "Sat": {}
         },
         "Flexible": {
-          "Mon": { "title": "Codehang", "is": "Optional", "duration": "6hrs" },
+          "Mon": { },
           "Wed": {},
           "Sat": {}
         }
       },
       "Starting Tuesday": {
-        "10:00 - 16:00": {
-          "Mon": { "title": "Codehang", "is": "Optional", "duration": "6hrs" },
-          "Wed": {},
-          "Sat": {}
+        "10:00 - 15:00": {
+          "Tue": {  },
+          "Thur": {},
+          "Sun": { "title": "New Cohort", "is": "May 12th, 2024", "duration": "5hrs" }
         },
         "18:30 - 21:30": {
-          "Mon": {},
-          "Wed": {
-            "title": "Codehang",
-            "is": "Optional",
-            "duration": "6hrs"
+          "Tue": { "title": "New Cohort", "is": "May 7th, 2024", "duration": "3hrs" },
+          "Thur": {
+            "title": "New Cohort",
+            "is": "May 9th, 2024",
+            "duration": "3hrs"
           },
-          "Sat": {}
+          "Sun": {}
         },
         "Flexible": {
-          "Mon": {},
-          "Wed": {},
-          "Sat": { "title": "Codehang", "is": "Optional", "duration": "6hrs" }
+          "Tue": {},
+          "Thur": {},
+          "Sun": { }
         }
       }
     },
@@ -652,62 +656,65 @@
       }
     ],
     "heroSection": {
-      "title": "Intro",
-      "desc": "Gain a basic understanding of JavaScript - one of the most sought after programming languages in the tech industry",
-      "addons": ["Online", "Beginner Friendly", "25 Hours of Content"],
-      "text1": "Our INTRO course is completely FREE",
-      "text2": "Get started now on your journey into Software development",
+      "title": "Explore Coding with Pulse Coding",
+      "desc": "At Pulse Coding, we believe in democratizing access to coding education. That's why we proudly offer free coding courses that are open to anyone, not just prospective students. Our commitment to fostering a culture of continuous learning and inclusivity is at the core of this initiative.",
+      "addons": ["Accessible Online", "Beginner Friendly", "Engaging Content"],
+      "text2": "Start Your Software Development Journey Today - Open to All, Regardless of Background or Experience.",
       "img": "/freecourse.jpg"
     },
     "reasonToTakeCourseSection": {
-      "header": "Journey into JavaScript Excellence",
-      "desc": "Embark on a journey into JavaScript excellence and elevate your coding prowess with our comprehensive course",
+      "header": "Unlock the Power of Learning",
+      "desc": "At Pulse Coding, we are dedicated to democratizing access to education. We proudly offer free courses that are open to anyone, breaking down barriers and fostering a culture of continuous learning and inclusivity.",
+
       "reason": [
         {
-          "title": "Building a Strong Foundation",
-          "desc": "An introductory JavaScript course provides a solid foundation for understanding the core concepts of programming, helping learners build a strong base for advanced coding skills."
+          "title": "Explore a World of Knowledge",
+          "desc": "Our free courses serve as a gateway for individuals eager to explore various fields of study, regardless of their background or prior experience. Whether you're a seasoned professional looking to upskill or someone completely new to the subject, our courses cater to all levels of expertise."
         },
         {
-          "title": "Versatility in Web Development",
-          "desc": "JavaScript is a versatile language used for both front-end and back-end web development. Learning the basics opens the door to creating dynamic and interactive websites."
+          "title": "Quality Education Beyond Basics",
+          "desc": "What sets Pulse Coding apart is our commitment to providing quality education that goes beyond the basics. Our free courses cover a range of topics, ensuring that learners gain a well-rounded understanding of practical applications in diverse fields, from technology to data science."
         },
         {
-          "title": "In-Demand Skill in the Job Market",
-          "desc": "JavaScript skills are highly sought after in the job market. Taking an introductory course enhances your employability and opens up opportunities in the tech industry."
+          "title": "Knowledge Sharing and Community Building",
+          "desc": "The decision to open our free courses to everyone stems from our belief in the power of knowledge-sharing and community building. We envision a world where skills and knowledge are accessible to anyone with the desire to learn. By removing barriers and offering free resources, we empower individuals to embark on a journey of self-discovery and skill development."
         },
         {
-          "title": "Enhancing Problem-Solving Skills",
-          "desc": "Programming challenges in an intro to JavaScript course help develop problem-solving skills. Learners gain the ability to break down complex problems into manageable tasks."
+          "title": "Inclusive Learning Community",
+          "desc": "Whether you're a student exploring potential paths, a professional seeking to diversify your skill set, or someone simply intrigued by the subject matter, Pulse Coding invites you to join our inclusive learning community. Our free courses not only provide valuable knowledge but also foster an environment of collaboration and support."
         },
         {
-          "title": "Interactive Web Experiences",
-          "desc": "JavaScript is instrumental in creating interactive elements on websites. Understanding its fundamentals enables you to add engaging features and improve user experiences."
+          "title": "Empowerment Through Education",
+          "desc": "Education is a transformative force. Pulse Coding believes in empowering individuals through accessible learning. Our free courses aim to equip learners with the knowledge and skills needed to thrive in various domains, contributing to personal growth and community development."
         },
         {
-          "title": "Preparation for Advanced Programming",
-          "desc": "Intro to JavaScript serves as a stepping stone for learning other programming languages and technologies, preparing learners for more advanced and specialized areas in software development."
+          "title": "Open Doors to New Opportunities",
+          "desc": "Embark on your learning journey with Pulse Coding to open doors to new opportunities. Whether you aspire to enter a new industry, enhance your career, or simply satisfy your curiosity, our free courses provide a platform for discovery, growth, and the pursuit of limitless possibilities."
         }
       ]
     },
     "faqsSection": {
-      "header": "Why should you join us?",
+      "header": "Frequently Asked Questions",
       "faqs": [
         {
-          "question": "Creativity & Quality",
-          "answer": "Our training encourages creative thinking and emphasizes the importance of quality in software engineering. We believe that a combination of creativity and quality craftsmanship leads to effective software solutions."
+          "question": "Why should you join us?",
+          "answer": "At Pulse Coding, we believe in democratizing access to coding education. Our free coding courses are open to anyone, fostering a culture of continuous learning and inclusivity. Whether you're a seasoned professional looking to upskill or someone completely new to coding, our courses cater to all levels of expertise."
         },
         {
-          "question": "Teamwork & Innovation",
-          "answer": "Teamwork and innovation are core values in our training programs. We cultivate effective teamwork skills through collaborative projects, fostering an environment that encourages innovation and industry best practices."
+          "question": "What sets Pulse Coding apart?",
+          "answer": "Pulse Coding stands out due to our dedication to providing quality education that goes beyond the basics. Our free courses cover a range of programming languages, frameworks, and industry-relevant skills, ensuring that learners gain a well-rounded understanding of coding's practical applications."
         },
         {
-          "question": "Agency Experience",
-          "answer": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its letter smaking it look like readable English."
+          "question": "How does Pulse Coding empower learners?",
+          "answer": "We empower individuals by removing barriers to education. Our decision to open free coding courses to everyone stems from our belief in the power of knowledge-sharing and community building. We envision a world where coding skills are accessible to anyone with the desire to learn."
         },
-
         {
-          "question": "Empathy in Action Simplicity",
-          "answer": "We instill a sense of empathy in our training, encouraging students to understand end-users' needs. We focus on creating user-friendly and accessible software solutions through simplicity in design and functionality."
+          "question": "Who should join Pulse Coding's community?",
+          "answer": "Whether you're a student exploring potential career paths, a professional seeking to diversify your skill set, or someone simply intrigued by the world of coding, Pulse Coding invites you to join our community. Our free coding courses not only provide valuable technical knowledge but also foster an environment of collaboration and support."
+        },
+        {
+          "question": "How does Pulse Coding view education boundaries?",
+          "answer": "At Pulse Coding, we believe that education should not be confined by boundaries. Our commitment to making coding accessible to all reflects our belief in the transformative power of learning and the positive impact it can have on individuals and communities worldwide."
         }
       ]
     },

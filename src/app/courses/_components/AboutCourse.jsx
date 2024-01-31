@@ -1,13 +1,11 @@
 import Container from "@/components/Container";
 import React from "react";
-import TabsNav from "./TabsNav";
 import data from "@/constants/data.json";
 const AboutCourse = () => {
   const { aboutCourseSection } = data.coursespage;
   return (
-    <div className="my-16" id="about">
-      <TabsNav active="about" />
-      <Container className="mt-20">
+    <div className=" " id="about">
+      <div>
         <h1 className="lg:text-4xl text-3xl font-bold tracking-wide">{aboutCourseSection.title}</h1>
         <p className="my-4 leading-7 text-justify">{aboutCourseSection.desc}</p>
         <h1 className="lg:text-2xl text-xl font-bold my-10">{aboutCourseSection.subtitle}</h1>
@@ -20,7 +18,7 @@ const AboutCourse = () => {
             </div>
           ))}
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

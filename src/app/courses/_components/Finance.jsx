@@ -2,7 +2,7 @@
 import Container from "@/components/Container";
 import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import React, { useState } from "react";
-import TabsNav from "./TabsNav";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import data from "@/constants/data.json";
 const Finance = () => {
   const { financeSection } = data.coursespage;
@@ -22,10 +22,14 @@ const Finance = () => {
     setInstallments(newInstallments);
   };
 
+  // const handleInstallmentsChange = (event) => {
+  //   const newInstallments = parseInt(event, 10) || 6;
+  //   setInstallments(newInstallments);
+  // };
+
   return (
-    <div className="my-16" id="finance">
-      <TabsNav active="finance" />
-      <Container className="mt-20">
+    <div className="py-16" id="finance">
+      <div>
         <h1 className="lg:text-4xl text-2xl font-bold">{financeSection.header}</h1>
         <p className="lg:text-lg text-md my-2">{financeSection.text}</p>
         <div className="lg:flex">
@@ -53,12 +57,28 @@ const Finance = () => {
                       <option value="12">12 months</option>
                       <option value="24">24 months</option>
                     </select>
+                    {/* <Select onValueChange={handleInstallmentsChange} defaultValue={installments} className="w-[180px]">
+                      
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select a duration">
+                            {installments === "6" && "6 months"}
+                            {installments === "12" && "12 months"}
+                            {installments === "24" && "24 months"}
+                          </SelectValue>
+                        </SelectTrigger>
+                      
+                      <SelectContent>
+                        <SelectItem value="6">6 months</SelectItem>
+                        <SelectItem value="12">12 months</SelectItem>
+                        <SelectItem value="24">24 months</SelectItem>
+                      </SelectContent>
+                    </Select> */}
                   </div>
                 </div>
               </Card>
             </div>
           </div>
-          <div className="lg:w-4/12 w-full">
+          <div className="lg:w-5/12 w-full">
             <Card className="bg-brandDark text-white py-4 text-center my-4">
               <div className="w-10/12 mx-auto">
                 <CardTitle className="font-semibold text-md">{financeSection.card3.header}</CardTitle>
@@ -88,7 +108,7 @@ const Finance = () => {
             </Card>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

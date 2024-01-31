@@ -1,32 +1,27 @@
 "use client";
-import TabsNav from "@/app/courses/_components/TabsNav";
 import Container from "@/components/Container";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Check } from "lucide-react";
 import React, { useState } from "react";
-import { usePathname } from "next/navigation";
-import FreeCourseTabs from "@/app/free-courses/_components/TabsNav";
 
 const Curriculum = ({ data }) => {
   const [selectedFeature, setSelectFeature] = useState(Object.keys(data.features)[0]);
   const handleFeatureClick = (feature) => {
     setSelectFeature(feature);
   };
-  const pathname = usePathname();
+
 
   const selectedFeatureContent = data.features[selectedFeature];
   return (
-    <div className="my-16" id={"curriculum"}>
-      {pathname === "/courses" && <TabsNav active="curriculum" />}
-      {pathname === "/free-courses" && <FreeCourseTabs active="curriculum" />}
-      <Container className="mt-20">
-        <div className="lg:w-3/5 mx-auto w-full text-center">
+    <div className="py-20" id={"curriculum"}>
+      <div >
+        <div className="lg:w-4/5 mx-auto w-full text-center">
           <h1 className="lg:text-4xl lg:w-4/5 mx-auto text-3xl font-bold tracking-wide">{data.header}</h1>
           <p className="my-4 leading-6 text-lg text-justify px-4">{data.text}</p>
         </div>
         <div className="border-b border-gray-300"></div>
         <div className="lg:flex my-5">
-          <div className="lg:w-3/12 w-full flex flex-col">
+          <div className="lg:w-4/12 w-full flex flex-col">
             {Object.keys(data.features).map((tab, idx) => (
               <h1
                 key={idx}
@@ -39,7 +34,7 @@ const Curriculum = ({ data }) => {
               </h1>
             ))}
           </div>
-          <div className="lg:w-7/12 w-full flex flex-col">
+          <div className="lg:w-8/12 w-full flex flex-col">
             <h1 className="lg:text-3xl text-2xl font-bold tracking-wide">{selectedFeatureContent.subtitle}</h1>
             <p className="leading-7 text-justify text-md">{selectedFeatureContent.desc}</p>
             <Card className=" p-4  rounded-lg mt-5">
@@ -64,7 +59,7 @@ const Curriculum = ({ data }) => {
             </Card>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

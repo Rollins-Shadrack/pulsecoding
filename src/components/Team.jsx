@@ -4,12 +4,9 @@ import Container from "@/components/Container";
 import Carousel from "nuka-carousel";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
-import TabsNav from "@/app/courses/_components/TabsNav";
-import { usePathname } from "next/navigation";
 
 const Team = ({ data, headingClass }) => {
   const [screenSize, setScreenSize] = useState(0);
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleResize = () => {
@@ -32,9 +29,8 @@ const Team = ({ data, headingClass }) => {
     cellSpacing: 10,
   };
   return (
-    <div className="my-5" id="team">
-      {pathname === "/courses" && <TabsNav active="team" />}
-      <Container className="mt-20">
+    <div className="py-20" id="team">
+      <div>
         <h1 className={headingClass}>{data.header}</h1>
         <Carousel
           className="w-full "
@@ -67,7 +63,7 @@ const Team = ({ data, headingClass }) => {
             </Card>
           ))}
         </Carousel>
-      </Container>
+      </div>
     </div>
   );
 };

@@ -2,23 +2,22 @@
 import Container from "@/components/Container";
 import { CardTitle } from "@/components/ui/card";
 import React, { useState } from "react";
-import TabsNav from "./TabsNav";
 import data from "@/constants/data.json";
 const ClassSchedule = () => {
   const { classScheduleSection } = data.coursespage;
   const [day, setDay] = useState(Object.keys(classScheduleSection)[0]);
-  const daysOfWeek = ["Mon", "Wed", "Sat"];
+  let daysOfWeek;
 
   const handleDayClick = (day) => {
     setDay(day);
   };
 
   const selectedDay = classScheduleSection[day];
+  day === "Starting Monday" ? (daysOfWeek = ["Mon", "Wed", "Sat"]) : (daysOfWeek = ["Tue", "Thur", "Sun"]);
 
   return (
-    <div className="py-16" id="schedule">
-      <TabsNav active="schedule" />
-      <Container className="mt-20">
+    <div className="py-20" id="schedule">
+      <div>
         <div className="flex h-64 md:h-80 lg:h-96">
           <div className="rotate-180 " style={{ writingMode: "vertical-rl" }}>
             <div className="text-center">
@@ -51,12 +50,12 @@ const ClassSchedule = () => {
                 </div>
                 <div className="flex justify-between text-xs md:text-base">
                   {daysOfWeek.map((day, idx) => (
-                    <div key={idx} className="font-semibold mx-auto">
+                    <div key={idx} className="font-semibold mx-auto mb-10">
                       {Object.keys(days[day]).length > 0 && (
                         <div className="border p-2  flex lg:space-x-8 space-x-2 justify-between pb-5 rounded-lg">
                           <div className="text-sm">
                             <h1>{days[day].title}</h1>
-                            <h1 className="text-gray-400">{days[day].is}</h1>
+                            <h1 className="text-gray-400 text-xs">{days[day].is}</h1>
                           </div>
                           <h1 className="text-xs whitespace-nowrap">{days[day].duration}</h1>
                         </div>
@@ -68,7 +67,7 @@ const ClassSchedule = () => {
             ))}
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

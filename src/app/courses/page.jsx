@@ -9,23 +9,20 @@ import Team from "@/components/Team";
 import Finance from "./_components/Finance";
 import Dates from "./_components/Dates";
 import data from '@/constants/data.json'
+import CourseInfo from "./_components/CourseInfo";
 
 export const metadata = {
   title: "Courses",
   description: "",
 };
 export default function About() {
-  const { instructorsSection, curricullumSection, brandsSection, callToActionSection } = data.coursespage;
+  const { brandsSection, callToActionSection } = data.coursespage;
+
   return (
     <>
       <Hero />
       <Bootcamp />
-      <AboutCourse />
-      <ClassSchedule />
-      <Curriculum data={curricullumSection} />
-      <Team data={instructorsSection} headingClass="text-center font-bold text-3xl" />
-      <Finance />
-      <Dates />
+      <CourseInfo/>
       <Brands data={brandsSection} />
       <CallToAction data={callToActionSection} />
     </>
