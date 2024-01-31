@@ -28,11 +28,11 @@ const Finance = () => {
   // };
 
   return (
-    <div className="py-16" id="finance">
+    <div className="py-10" id="finance">
       <div>
         <h1 className="lg:text-4xl text-2xl font-bold">{financeSection.header}</h1>
-        <p className="lg:text-lg text-md my-2">{financeSection.text}</p>
-        <div className="lg:flex">
+        <p className="lg:text-lg text-md my-2 ">{financeSection.text}</p>
+        <div className="lg:flex mt-7">
           <div className="lg:w-7/12 w-full">
             <div className="lg:w-4/5 px-5 mx-auto">
               <Card className="my-4 py-6  shadow-lg ">

@@ -29,7 +29,7 @@ const Team = ({ data, headingClass }) => {
     cellSpacing: 10,
   };
   return (
-    <div className="py-20" id="team">
+    <div className="py-10" id="team">
       <div>
         <h1 className={headingClass}>{data.header}</h1>
         <Carousel

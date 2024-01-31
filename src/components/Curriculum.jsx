@@ -13,7 +13,7 @@ const Curriculum = ({ data }) => {
 
   const selectedFeatureContent = data.features[selectedFeature];
   return (
-    <div className="py-20" id={"curriculum"}>
+    <div className="py-10" id={"curriculum"}>
       <div >
         <div className="lg:w-4/5 mx-auto w-full text-center">
           <h1 className="lg:text-4xl lg:w-4/5 mx-auto text-3xl font-bold tracking-wide">{data.header}</h1>

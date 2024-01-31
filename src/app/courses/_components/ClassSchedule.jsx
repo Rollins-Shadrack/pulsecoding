@@ -16,7 +16,7 @@ const ClassSchedule = () => {
   day === "Starting Monday" ? (daysOfWeek = ["Mon", "Wed", "Sat"]) : (daysOfWeek = ["Tue", "Thur", "Sun"]);
 
   return (
-    <div className="py-20" id="schedule">
+    <div className="py-5" id="schedule">
       <div>
         <div className="flex h-64 md:h-80 lg:h-96">
           <div className="rotate-180 " style={{ writingMode: "vertical-rl" }}>
