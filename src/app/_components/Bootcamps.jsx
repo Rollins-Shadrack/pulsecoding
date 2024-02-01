@@ -29,7 +29,7 @@ const Bootcamps = () => {
                 <h1 className="text-xl font-bold my-2">{course.title}</h1>
                 <p className="px-2 mx-auto text-base">{course.desc}</p>
 
-                <div className="inline-flex items-center justify-center flex-shrink-0 my-4 w-fit mx-auto border-2 border-brandPrimary p-2 rounded-2xl whitespace-nowrap hover:scale-105 cursor-pointer">
+                <div className="inline-flex items-center justify-center flex-shrink-0 my-4 mx-auto border-2 border-brandPrimary p-2 rounded-lg whitespace-nowrap hover:scale-105 cursor-pointer max-w-full overflow-hidden">
                   {course.button} <ArrowRight className="w-6 h-6 ml-2" />
                 </div>
               </div>

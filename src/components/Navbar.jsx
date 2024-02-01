@@ -56,7 +56,7 @@ const Navbar = ({data}) => {
             ))}
           </ul>
 
-          <div className="space-x-10 flex items-center">
+          <div className="space-x-10 ml-2 flex items-center">
             {/* button for large devices */}
             <Link className="md:flex hidden" href="/">
               <Button text={data.button} className="text-white bg-black hover:bg-brandSecondary uppercase" />

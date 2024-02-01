@@ -36,11 +36,11 @@ const Team = ({ data, headingClass }) => {
           className="w-full "
           {...params}
           renderBottomCenterControls={({ currentSlide, slideCount, goToSlide }) => (
-            <ul className="flex space-x-2 mt-4">
+            <ul className="flex flex-wrap items-center justify-center  space-x-2 mt-4">
               {[...Array(slideCount)].map((_, index) => (
                 <li key={index}>
                   <button
-                    className={`h-1 w-8 rounded-2xl ${index === currentSlide ? "bg-brandPrimary" : "bg-gray-400"}`}
+                    className={`h-1 lg:w-8 md:w-5 w-3 rounded-2xl ${index === currentSlide ? "bg-brandPrimary" : "bg-gray-400"}`}
                     onClick={() => goToSlide(index)}
                   />
                 </li>

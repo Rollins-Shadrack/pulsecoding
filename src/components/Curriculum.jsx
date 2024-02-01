@@ -1,5 +1,4 @@
 "use client";
-import Container from "@/components/Container";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Check } from "lucide-react";
 import React, { useState } from "react";
@@ -16,8 +15,8 @@ const Curriculum = ({ data }) => {
     <div className="py-10" id={"curriculum"}>
       <div >
         <div className="lg:w-4/5 mx-auto w-full text-center">
-          <h1 className="lg:text-4xl lg:w-4/5 mx-auto text-3xl font-bold tracking-wide">{data.header}</h1>
-          <p className="my-4 leading-6 text-lg text-justify px-4">{data.text}</p>
+          <h1 className="lg:text-4xl lg:w-4/5 mx-auto text-xl font-bold tracking-wide">{data.header}</h1>
+          <p className="my-4 leading-6 lg:text-lg text-base text-justify lg:px-4">{data.text}</p>
         </div>
         <div className="border-b border-gray-300"></div>
         <div className="lg:flex my-5">

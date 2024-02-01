@@ -25,24 +25,26 @@ const Newsletter = () => {
     <div className="py-20 bg-brandDark overflow-hidden text-white">
       <div className="lg:w-3/5 w-full px-4 mx-auto text-center flex flex-col items-center justify-center">
         <h1 className="lg:text-5xl text-3xl font-bold ">{header}</h1>
-        <p className="my-4">{ desc}</p>
-        <div className="lg:w-3/5 bg-white py-2 px-5 rounded-2xl my-5">
+        <p className="my-4">{desc}</p>
+        <div className="lg:w-3/5  bg-white p-1  rounded-lg my-5">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="flex justify-between space-x-2 w-full">
-              <FormField
-                control={form.control}
-                name="email"
-                className="w-full"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormControl>
-                      <Input placeholder="Enter your email address" className="border-0 w-2/3" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button className="bg-brandPrimary px-5 rounded-2xl" type="submit">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-3 gap-3 ">
+              <div className="col-span-2">
+                <FormField
+                  control={form.control}
+                  name="email"
+                  className=""
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <Input placeholder="Enter your email address" className="border-none" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <Button className="bg-brandPrimary px-5 rounded-lg " type="submit">
                 Get Started
               </Button>
             </form>

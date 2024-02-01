@@ -40,7 +40,7 @@ const CourseInfo = () => {
 
     return (
       <div ref={courseinfoTabsRef} className="pt-10">
-        <Container className="md:flex w-full items-start justify-center space-x-14 ">
+        <Container className="md:flex w-full items-start justify-center lg:space-x-14 ">
           <div className="sticky top-28  md:w-2/12 rounded-lg p-4 shadow-sm border  z-[999] hidden md:block ">
             {sectionIds.map((tab, idx) => (
               <a

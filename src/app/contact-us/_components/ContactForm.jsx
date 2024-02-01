@@ -6,14 +6,14 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { MailCheck, Send } from 'lucide-react';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
-import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { Textarea } from '@/components/ui/textarea';
-import Button from '@/components/Button';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Resend } from 'resend';
+import { Button } from '@/components/ui/button';
 
 const ContactForm = ({data}) => {
   const recaptchaSiteKey = "6LcONF4pAAAAAAmKQVu-K54kpH5ZWX6ZcQ01g52s"
@@ -58,7 +58,7 @@ const ContactForm = ({data}) => {
               <CardContent>
                 <Form {...form}>
                   <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-                    <div className="grid grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <FormField
                         control={form.control}
                         name="firstName"
@@ -154,13 +154,14 @@ const ContactForm = ({data}) => {
                       name="capVal"
                       render={({ field }) => (
                         <FormItem>
-                          <ReCAPTCHA {...field} sitekey={recaptchaSiteKey} />
+                          <ReCAPTCHA {...field} sitekey={recaptchaSiteKey} size="normal" />
                           <FormMessage />
                         </FormItem>
                       )}
                     />
-
-                    <Button text="Send" icon={<Send />} className="bg-black text-white " />
+                    <Button variant="outline" className="inline-flex">
+                      Send <Send className="ml-2 w-5 h-5" />
+                    </Button>
                   </form>
                 </Form>
               </CardContent>

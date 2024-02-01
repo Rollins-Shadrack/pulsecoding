@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 const FAQ = ({ Bodyclass, data }) => {
   return (
-    <div className="py-20" id="faqs">
+    <div className="py-10" id="faqs">
       <div className={cn(Bodyclass, "mt-10")}>
         <h1 className="font-bold text-4xl mb-8  text-center uppercase tracking-wide">{data.header}</h1>
 
