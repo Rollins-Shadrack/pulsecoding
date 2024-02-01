@@ -8,7 +8,13 @@ const Hero = ({data}) => {
       <Container>
         <div className="flex items-center justify-center">
           <div className="w-full">
-            <Image src={data.img} width={650} height={500} className=" rounded-lg h-full  float-left border-2 border-white mr-5 " />
+            <Image
+              src={data.img}
+              width={650}
+              height={500}
+              className=" rounded-lg h-full  float-left border-2 border-white mr-5 "
+              alt="pulsecoding.com"
+            />
             <div className="text-box">
               <h1 className="font-semibold text-2xl lg:text-4xl leading-tight uppercase mb-4">{data.title}</h1>
               <p className="text-base   text-justify" dangerouslySetInnerHTML={{ __html: data.desc }} />
