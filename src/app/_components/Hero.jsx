@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
 
           <div className="lg:w-5/12 w-full  relative lg:mt-6 mx-auto mt-10  ">
-            <div className="h-[50vw] w-[50vw] sm:h-96 sm:w-96 bg-brandPrimary relative rounded-t-[10%] rounded-br-[30%] rounded mx-auto">
+            <div className="h-[52vw] w-[50vw] sm:h-96 sm:w-96 bg-brandPrimary relative rounded-t-[10%] rounded-br-[30%] rounded mx-auto">
               <Image src={img} height={200} width={345} className="absolute -top-8 -left-10 " alt="pulsecoding.com" />
             </div>
           </div>

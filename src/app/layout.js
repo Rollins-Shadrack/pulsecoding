@@ -6,8 +6,6 @@ import { cn } from "@/lib/utils";
 import data from "@/constants/data.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Suspense } from "react";
-import Loader from "@/components/Loader";
 
 
 export const fontSans = FontSans({
@@ -21,18 +19,17 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
+  
   const { navbar , footer} = data;
   return (
     <html lang="en">
       <body className={cn("min-h-screen font-sans antialiased main-container", fontSans.variable)}>
         <div className="wrapper flex flex-col h-screen">
-          <Suspense fallback={<Loader />}>
-            {/* Navbar */}
-            <Navbar data={navbar} />
+          {/* Navbar */}
+          <Navbar data={navbar} />
             <main className="flex-1 flex flex-col flex-grow justify-center">{children}</main>
-            {/* Footer */}
-            <Footer data={footer} />
-          </Suspense>
+          {/* Footer */}
+          <Footer data={footer} />
         </div>
       </body>
     </html>

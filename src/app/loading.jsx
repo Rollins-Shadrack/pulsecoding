@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 import { Command } from "lucide-react";
 
-const Loader = () => {
+const loading = () => {
   return (
     <div className={"flex justify-center items-center h-screen  w-full"}>
       <svg className={"w-24 h-24 text-brandPrimary animate-spin"} viewBox="0 0 24 24">
@@ -9,6 +9,6 @@ const Loader = () => {
       </svg>
     </div>
   );
-};
+}
 
-export default Loader;
+export default loading
