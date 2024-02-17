@@ -41,7 +41,7 @@ const Navbar = ({data}) => {
       <nav className={`py-2  ${isSticky ? "sticky top-0 left-0 right-0 border shadow-xl bg-white duration-300 z-[999]" : ""}`}>
         <Container className="flex justify-between items-center text-base ">
           <Link className="" href="/">
-            <Image src={data.logo} width={100} height={100} className="" />{" "}
+            <Image src={data.logo} width={100} height={100} className="" alt="pulsecoding.com" />{" "}
           </Link>
 
           {/* Navbar items for large screens */}

@@ -41,11 +41,11 @@ const Bootcamp = () => {
                 </p>
               </div>
               <div className="w-64 h-48 p-2 rounded border translate-x-4  -rotate-6  bg-gray-200">
-                <Image src="/bootcamp1.jpeg" width={600} height={500} className="object-fill h-48 w-96" />
+                <Image src="/bootcamp1.jpeg" alt="pulsecoding.com" width={600} height={500} className="object-fill h-48 w-96" />
               </div>
 
               <div className="h-64 w-64 p-2 border rounded absolute left-[18%] top-[30%] md:left-[20%] md:top-[15%] lg:left-[28%] lg:top-[10%] bg-gray-300 rotate-3">
-                <Image src="/bootcamp2.jpeg" width={600} height={500} className="object-cover " />
+                <Image src="/bootcamp2.jpeg" width={600} height={500} alt="pulsecoding.com" className="object-cover " />
               </div>
             </div>
           </div>

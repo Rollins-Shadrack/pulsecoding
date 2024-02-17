@@ -149,5 +149,5 @@ const ReactSelect = forwardRef(({
     />
   )
 })
-
+ReactSelect.displayName = "ReactSelect";
 export default ReactSelect

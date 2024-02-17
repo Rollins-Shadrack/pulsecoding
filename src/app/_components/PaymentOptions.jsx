@@ -2,6 +2,7 @@ import React from "react";
 import PaymentOptionsForm from "./PaymentOptionsForm";
 import Container from "@/components/Container";
 import data from "@/constants/data.json";
+import Image from "next/image";
 
 const PaymentOptions = () => {
   const { header, addons, subtitle1, subtitle2, images } = data.homepage.paymentoptions;
@@ -30,10 +31,10 @@ const PaymentOptions = () => {
             <h1 className="leading-relaxed font-semibold lg:text-xl text-lg">{subtitle1} </h1>
             <div className="flex justify-center -space-x-3">
               {images.map((image, idx) => (
-                <img key={idx}
-                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800"
-                  src={image}
-                  alt="Image Description"
+                <Image key={idx}
+                  className="inline-block h-10 w-10 rounded-full ring-2 ring-white dark:ring-gray-800 object-cover"
+                  src={image} width={400} height={400}
+                  alt="pulsecoding.com"
                 />
               ))}
               <span className="inline-flex items-center justify-center h-10 w-10 rounded-full ring-2 ring-white bg-gray-800 dark:bg-gray-900 dark:ring-gray-800">
